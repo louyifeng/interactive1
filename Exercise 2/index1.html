@@ -1,0 +1,177 @@
+<html lang="en">
+<head>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:100,200,400,400i,700,700i" rel="stylesheet">
+
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+
+
+	<title>
+		Exercise 2 - Card
+	</title>
+	<style>
+
+		body {
+		  font-family: 'Noto Sans', sans-serif;
+		  background-color: #bbb;
+		}
+
+		.card {
+			transition: 0.5s ease;
+			text-align: center;
+			width: 200px;
+			height: 350px;
+			border:1px solid #EEE;
+			margin: 50px auto;
+			background-color: #26374F;
+			font-size: 12px;
+			color: #ccc;
+		}
+
+		.logo {
+			padding: 30px 0 0;
+		}
+
+		.logo img {
+			vertical-align: middle;
+			width: 60px;
+			border-radius: 50%;
+			border:1px solid #EEE;
+			position: relative;
+			top:-3px;
+		}
+
+		.content {
+			height: 100%;
+			position: relative;
+		}
+
+		.name {
+			color: #F2FFE3;
+			font-size: 16px;
+			font-weight: 700;
+			padding: 5px 0 0;
+			line-height: 1.0em;
+		}
+
+		.contact {
+			padding: 20px 0;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
+
+		.bio{
+			display: none;
+		}
+
+		.Ivan{
+        		display: none;
+        	}
+
+		@media screen and (min-width: 768px) {
+			.card{
+				text-align: left;
+				width: 700px;
+				height: 350px;
+				background-color: #506F7A;
+				color: #eee;
+
+			}
+
+			.name{
+				color: #F2FFE3;
+				font-size: 28px;
+				font-weight: 700;
+			}
+
+			.logo{
+				float: left;
+				padding: 20px;
+			}
+
+			.text{
+				float: left;
+				padding: 20px 5px;
+			}
+
+			.contact{
+				font-size: 20px;
+				padding-left: 180px;
+				bottom: 20px;
+				width: 50%;
+			}
+
+			body{
+				background-color: #ccc;
+			}
+			
+
+
+        }
+
+        @media screen and (min-width: 1200px) {
+        	.card{
+        		background-color: #699294;
+        		transform: rotate(3deg);
+        		color: #F2FFE3;
+        	}
+
+        	.bio{
+        		display: block;
+        		float: right;
+        		width: 25%;
+        		font-weight: 400;
+        		font-style: italic;
+        		padding: 10px;
+        	}
+
+        	body{
+				background-color: #eee;
+			}
+	
+
+        }
+
+
+	</style>
+</head>
+
+<body>
+
+	<div class="card">
+		<div class="content">
+			
+			<div class="logo">
+				<img src="IMG_5784.JPG" />
+			</div>
+
+			<div class="text">
+
+				<div class="name">Ivan</div>
+				<div class="title">Graphic Designer</div>
+
+			</div>
+
+			<div class="contact">
+				email@email.com<br />
+				555-555-5555<br />
+				San Francisco, CA
+			</div>
+
+
+			<div class="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+
+			
+			
+		</div>
+	</div>
+
+</body>
+</html>
