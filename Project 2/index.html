@@ -1,0 +1,520 @@
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>
+    Project 2
+  </title>
+  <style>
+ 
+  .container {
+   width: 1100px;
+   height: 850px;
+   overflow: hidden;
+   position: relative;
+   margin: 0 auto;
+
+}
+
+  body{
+  	background-color: #11181E;
+  }
+
+.stage 
+{
+	background : -moz-linear-gradient(48.9% 89.77% 88.77deg,rgba(25, 116, 149, 1) 0%,rgba(98, 139, 120, 1) 100%);
+  background : -webkit-linear-gradient(88.77deg, rgba(25, 116, 149, 1) 0%, rgba(98, 139, 120, 1) 100%);
+  background : -webkit-gradient(linear,48.9% 89.77% ,51.37% 0.73% ,color-stop(0,rgba(25, 116, 149, 1) ),color-stop(1,rgba(98, 139, 120, 1) ));
+  background : -o-linear-gradient(88.77deg, rgba(25, 116, 149, 1) 0%, rgba(98, 139, 120, 1) 100%);
+  background : -ms-linear-gradient(88.77deg, rgba(25, 116, 149, 1) 0%, rgba(98, 139, 120, 1) 100%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#197495', endColorstr='#628B78' ,GradientType=0)";
+  background : linear-gradient(1.23deg, rgba(25, 116, 149, 1) 0%, rgba(98, 139, 120, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#197495',endColorstr='#628B78' , GradientType=1);
+
+      width: 510px;
+	  	height: 660px;
+	  	margin: 25px auto;
+	    overflow: hidden;
+	  	position: relative;
+	    border-style: inset;
+	    border-width: 20px;
+	    border-color: #060B0F;
+	    position: relative;
+	  	}
+
+.light1{
+	transform: rotate(-50deg);
+	position: relative;
+	left: -65px;
+	top:-160px;
+	animation: light1 1s infinite;
+	animation-direction: alternate;
+}
+
+@keyframes light1{
+	from{opacity: 1}
+	to{opacity: 0;}
+}
+
+.light2{
+	transform: rotate(-50deg);
+	position: relative;
+	left: -65px;
+	top:-875px;
+	animation: light1 1s infinite;
+	animation-direction: alternate;
+	animation-delay: 0.4s;
+}
+
+@keyframes light2{
+	from{opacity: 0;}
+	to{opacity: 0;}
+}
+
+.light3{
+	transform: rotate(deg);
+	position: relative;
+	left: -105px;
+	top:-1175px;
+	animation: light1 1s infinite;
+	animation-direction: alternate;
+	animation-delay: 0.5s;
+}
+
+@keyframes light2{
+	from{opacity: 0;}
+	to{opacity: 0;}
+}
+
+.corala1
+{   position: absolute;
+	top: 470px;
+	right: -30px;
+	animation: corala 3s infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+  }
+
+@keyframes corala{
+	from{opacity: 1}
+	to{opacity: 0.2;}
+}
+
+.corala2{
+    position: absolute;
+    top: 470px;
+    left: -30px;
+    animation: corala 3s infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+	animation-delay: 2s;
+}
+
+.corala3{   
+	position: absolute;
+    top: 490px;
+    left: 100px;
+    animation: corala 3s infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+	animation-delay: 1s;
+}
+
+.stone1{
+	position: absolute;
+    top: 465px;
+    left: -25px;
+ }
+
+.stone2{
+	position: absolute;
+    top: 520px;
+    left: 60px;
+    animation: corala 3s infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+ }
+
+.stone3{
+	position: absolute;
+    top: 540px;
+    left: -50px;
+ }
+
+.fishgroup
+{
+	background-repeat : no-repeat;
+	position: absolute;
+	animation: fishgroup 3s infinite;
+	animation-direction: alternate;
+	top: 320px;
+	left: 340px;
+    
+}
+@keyframes fishgroup{
+	from {opacity: 100;}
+	to {opacity:0;}
+}
+
+.fishgroup2{
+	background-repeat : no-repeat;
+	animation: fishgroup 3s infinite;
+	animation-direction: alternate;
+	position: absolute;
+	top: 320px;
+	left: 20px;
+	animation-delay: 2s;
+}
+
+.suit{
+	background-repeat : no-repeat;
+	animation: suit 16s infinite;
+	position: absolute;
+	transform: rotate(10deg);
+	animation-timing-function: linear;
+	opacity: 0.9;
+}
+
+@keyframes suit{
+   from {left:600px; top: 300px;}
+   to {left: -300px; top: 30px;}
+}
+
+.dress1{
+	background-repeat : no-repeat;
+	animation: dress1 10s infinite;
+	position: absolute;
+	animation-timing-function: linear;
+	opacity: 0.7;
+}
+
+@keyframes dress1{
+   from {left:-600px; top: 300px;}
+   to {left: 400px; top: -90px;}
+}
+
+.dress2{
+	background-repeat : no-repeat;
+	animation: dress2 5s infinite;
+	position: absolute;
+	transform: rotate(-80deg);
+	animation-direction: alternate;
+	opacity: 0.5;
+}
+
+@keyframes dress2{
+   from {right:250px; top: 300px;}
+   to {right: 250px; top: 330px;}
+}
+
+.hat{
+	background-repeat : no-repeat;
+	animation: hat 12s infinite;
+	position: absolute;
+	transform: rotate(160deg);
+    animation-timing-function: linear; 
+	opacity: 0.7;
+}
+
+@keyframes hat{
+   0% {transform: rotate(160deg);left:-400px; top: 250px;}
+   50% {transform: rotate(160deg);left:200px; top: 300px;}
+   100% {transform: rotate(180deg);left: 800px; top: 450px;}
+}
+
+.seal{
+	bottom: 1105px;
+	left: 330px;
+	position: relative;
+}
+
+.seal:hover{
+	bottom: 1125px;
+}
+
+.monkey{
+	bottom: 540px;
+	left: 765px;
+	position: relative;
+}
+
+.monkey:hover{
+	bottom: 560px;
+}
+
+.fox{
+	bottom: 270px;
+	left: 557px;
+	position: relative;
+}
+
+.fox:hover{
+	bottom: 290px;
+}
+
+
+.tiger{
+	position: relative;
+	bottom: 790px;
+	left: 65px;
+}
+
+.tiger:hover{
+	bottom: 810px;
+}
+
+.tag{
+	height: 100px;
+	width: 100px;
+	position: relative;
+	background-color:#ddd;
+	color: black;
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	left:870px;
+	top:-400px;
+	padding: 10px;
+}
+
+.tag:hover{
+	background-color: white;
+}
+
+.tag.pressed{
+	background-color: #999;
+}
+
+.tag.pressed2{
+	background-color: white;
+}
+
+.show {
+				animation: slide-reveal 0.5s forwards alternate;
+			}
+
+			@keyframes slide-reveal {
+				0% {
+					opacity: 0;
+					height: 100px;
+					width: 100px;
+					top:375px; 
+					left:850px;
+					color: transparent;
+					
+				}
+				80% {
+					opacity: 1;
+					height: 500px;
+					width: 500px;
+					top:200px; 
+					left:295px;
+					color: transparent;
+
+				}
+				100%{
+					opacity: 1;
+					height: 500px;
+					width: 500px;
+					top:200px; 
+					left:295px;
+					color: black;
+				}
+			}
+
+.show2 {
+				animation: disappear 0.5s forwards alternate;
+			}
+
+			@keyframes disappear {
+				0% {
+					opacity: 1;
+					height: 500px;
+					width: 500px;
+					top:200px; 
+					left:295px;
+					color: black;
+				}
+
+				10%{
+					opacity: 1;
+					height: 500px;
+					width: 500px;
+					top:200px; 
+					left:295px;
+					color: transparent;
+				}
+				100% {
+					opacity: 0;
+					height: 50px;
+					width: 50px;
+					top:375px; 
+					left:850px;
+					color: transparent;
+				}
+			}
+
+.largepaper{
+	height: 500px;
+    width: 500px;
+    background-color: white;
+    position: absolute;
+    top: -200px;
+    left: 100px;
+    opacity: 0;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+
+.bubble1{
+	position: absolute;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	background-color: #74ADBA;
+	animation: bubble1 3s infinite;
+	animation-timing-function: linear; 
+}
+
+
+
+@keyframes bubble1{
+   0% {bottom: 100px; left: 100px;opacity: 0.0; height: 10px;width: 10px;}
+   20% {bottom: 120px; left: 106px;opacity: 0.6; height: 10px;width: 10px;}
+   40% {bottom: 140px; left: 100px;opacity: 0.9; height: 10px;width: 10px;}
+   60% {bottom: 160px; left: 106px;opacity: 1; height: 15px;width: 15px;}
+   80% {bottom: 180px; left: 100px;opacity: 0.6; height: 20px;width: 20px;}
+   90% {bottom: 200px; left: 106px;opacity: 0.3; height: 25px;width: 25px;}
+   100% {bottom: 200px; left: 100px;opacity: 0; height: 30px;width: 30px;}
+}
+
+.bubble2{
+	position: absolute;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	bottom: 100px; left: 400px;
+	background-color: #74ADBA;
+	animation: bubble2 3s infinite;
+	animation-timing-function: linear; 
+	animation-delay: 1s;
+}
+
+@keyframes bubble2{
+   0% {bottom: 100px; left: 400px;opacity: 0.3; height: 10px;width: 10px;}
+   20% {bottom: 120px; left: 405px;opacity: 0.6; height: 10px;width: 10px;}
+   40% {bottom: 140px; left: 400px;opacity: 0.9; height: 10px;width: 10px;}
+   60% {bottom: 160px; left: 405px;opacity: 1; height: 15px;width: 15px;}
+   80% {bottom: 180px; left: 400px;opacity: 0.6; height: 20px;width: 20px;}
+   90% {bottom: 200px; left: 405px;opacity: 0.3; height: 25px;width: 25px;}
+   100% {bottom: 220px; left: 400px;opacity: 0; height: 30px;width: 30px;}
+}
+
+.bubble3{
+	position: absolute;
+	border-radius: 50%;
+	height: 5px;
+	width: 5px;
+	bottom: 100px; left: 400px;
+	background-color: #74ADBA;
+	animation: bubble3 3s infinite;
+	animation-timing-function: linear; 
+	animation-delay: 2s;
+}
+
+@keyframes bubble3{
+   0% {bottom: 100px; left: 300px;opacity: 0.3; height: 5px;width: 5px;}
+   20% {bottom: 120px; left: 305px;opacity: 0.6; height: 5px;width: 5px;}
+   40% {bottom: 140px; left: 300px;opacity: 0.9; height: 5px;width: 5px;}
+   60% {bottom: 160px; left: 305px;opacity: 1; height: 10px;width: 10px;}
+   80% {bottom: 180px; left: 300px;opacity: 0.6; height: 15px;width: 15px;}
+   90% {bottom: 200px; left: 305px;opacity: 0.3; height: 20px;width: 20px;}
+   100% {bottom: 220px; left: 300px;opacity: 0; height: 25px;width: 25px;}
+}	 
+
+  	</style>
+  	<script>
+  		$(document).ready(function() {
+
+				$(".btn01").click(function(){
+					$(this).addClass('pressed');
+					$(".largepaper").removeClass('show2').addClass('show');
+				});
+
+				$(".largepaper").click(function(){
+					$(this) .addClass('show2')
+					$(".btn01") .removeClass('pressed')
+
+				});
+
+				});
+
+  	</script>
+</head>
+
+<body>
+  <div class="container">
+  
+  <div class="stage">
+  <div class="light1"><img src="light1.svg" height="600" ></div>
+  <div class="light2"><img src="light2.svg" height="500" ></div>
+   <div class="light3"><img src="light2.svg" height="500" ></div>
+  <div class="corala1"><img src="coral1.png" height="100" ></div>
+  <div class="bubble1"></div>
+  <div class="bubble2"></div>
+  <div class="bubble3"></div>
+  <div class="corala2"><img src="coral2.png" height="100" ></div>
+  <div class="corala3"><img src="coral3.png" height="100" ></div>
+  <div class="stone1"><img src="stone1.png" height="180" ></div>
+  <div class="stone2"><img src="stone2.png" height="130" ></div>
+  <div class="stone3"><img src="stone3.png" height="270" ></div>
+ 
+
+  <div class="fishgroup"><img src="fishgroup.png" height="70" ></div>
+
+  <div class="fishgroup2"><img src="fishgroup2.png" height="70" ></div>
+
+  <div class="suit"><img src="suit.png" height="100" ></div>
+
+  <div class="dress1"><img src="dress1.png" height="80" ></div>
+
+  <div class="dress2"><img src="dress2.png" height="60" ></div>
+
+  <div class="hat"><img src="hat.png" height="80" ></div>
+
+  </div>
+  <div class="tag btn01">
+  	Human
+  	<br>
+  	----------------------------------------------------------------------------
+  </div>
+
+ <div class="fox"><img src="fox.png" height="280" ></div>
+  <div class="monkey"><img src="monkey.png" height="300" ></div>
+  
+  <div class="tiger"><img src="tiger.png" height="290" ></div>
+  <div class="seal"><img src="seal.png" height="290" ></div>
+  <div class="largepaper">
+    <br>
+  <span style="font-size: 60px;">Human</span>
+  <br><br>  <br><br>  <br>
+  <div class="human"><img src="human.svg" height="150" ></div>
+   <br><br> 
+  <h1>Ruthless, fierce and aggresive animals</h1>
+  
+  
+  
+  <br><br>
+ 
+
+  </div>
+  
+  </div>
+  
+  
+
+  </body>
+  
+</html>
