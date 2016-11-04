@@ -6,6 +6,10 @@
     Project 2
   </title>
   <style>
+
+  h6{
+    font-size: 4px;
+  }
  
   .container {
    width: 1100px;
@@ -271,22 +275,23 @@
 	color: black;
 	text-align: center;
 	font-family: 'Ubuntu', sans-serif;
-	left:870px;
+	left:88px;
 	top:-400px;
 	padding: 10px;
 }
 
 .tag:hover{
 	background-color: white;
+	-moz-box-shadow: 0 0 10px #ccc; 
+    -webkit-box-shadow: 0 0 10px #ccc; 
+    box-shadow: 0 0 10px #ccc;
 }
 
 .tag.pressed{
 	background-color: #999;
 }
 
-.tag.pressed2{
-	background-color: white;
-}
+
 
 .show {
 				animation: slide-reveal 0.5s forwards alternate;
@@ -298,7 +303,7 @@
 					height: 100px;
 					width: 100px;
 					top:375px; 
-					left:850px;
+					left:105px;
 					color: transparent;
 					
 				}
@@ -306,8 +311,8 @@
 					opacity: 1;
 					height: 500px;
 					width: 500px;
-					top:200px; 
-					left:295px;
+					top:100px; 
+					left:275px;
 					color: transparent;
 
 				}
@@ -315,8 +320,8 @@
 					opacity: 1;
 					height: 500px;
 					width: 500px;
-					top:200px; 
-					left:295px;
+					top:100px; 
+					left:275px;
 					color: black;
 				}
 			}
@@ -330,8 +335,8 @@
 					opacity: 1;
 					height: 500px;
 					width: 500px;
-					top:200px; 
-					left:295px;
+					top:100px; 
+					left:275px;
 					color: black;
 				}
 
@@ -339,8 +344,8 @@
 					opacity: 1;
 					height: 500px;
 					width: 500px;
-					top:200px; 
-					left:295px;
+					top:100px; 
+					left:275px;
 					color: transparent;
 				}
 				100% {
@@ -348,7 +353,7 @@
 					height: 50px;
 					width: 50px;
 					top:375px; 
-					left:850px;
+					left:105px;
 					color: transparent;
 				}
 			}
@@ -435,13 +440,16 @@
 }	 
 
 .exit{
-	color: #fff;
-	font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
     position: absolute;
-    bottom: 300px;
-    left: 100px;
+    top:200px;
+    left: 105px;
 
+}
+
+.exit:hover{
+    -moz-box-shadow: 0 0 10px #ccc; 
+    -webkit-box-shadow: 0 0 10px #ccc; 
+    box-shadow: 0 0 10px #ccc;
 }
 
 a{
@@ -457,6 +465,93 @@ a:hover{
 	color: red;
 }
 
+.pizza{
+	position: absolute;
+	top: -40px;
+	left: 100px;
+	opacity: 0.75;
+	
+}
+
+.drop{
+	animation: pizza 16s;
+	animation-fill-mode: forwards;
+	animation-delay: 3s;
+}
+
+.pizza2{
+	position: absolute;
+	top: -40px;
+	left: 100px;
+	opacity: 0.75;
+}
+
+.drop2{
+	animation: pizza2 16s;
+	animation-fill-mode: forwards;
+}
+
+.pizza3{
+	position: absolute;
+	top: -40px;
+	left: 100px;
+	opacity: 0.75;
+}
+
+.drop3{
+	animation: pizza3 16s;
+	animation-fill-mode: forwards;
+	animation-delay: 7s;
+}
+
+
+@keyframes pizza{
+    from {top: -35px; left: 400px;}
+    to {top: 600px; left: 400px;}
+}
+
+@keyframes pizza2{
+    from {top: -35px; left: 100px;}
+    to {top: 600px; left: 100px;}
+}
+
+@keyframes pizza3{
+    from {top: -35px; left: 200px;}
+    to {top: 600px; left: 200px;}
+}
+
+.feed{
+	font-family: 'Ubuntu', sans-serif;
+	color: #eee;
+	font-size: 25px;
+	position: absolute;
+	right: 100px;
+	top: 300px;
+	height: 100px;
+	width: 100px;
+	padding: 20px;
+	text-align: center;
+	background-color: #EF7D05;
+}
+
+.feed:hover{
+	color: white;
+	background-color: #EFA205;
+	-moz-box-shadow: 0 0 10px #ccc; 
+    -webkit-box-shadow: 0 0 10px #ccc; 
+    box-shadow: 0 0 10px #ccc;
+}
+
+
+.feed.pressed{
+	background-color: #EF7D05;
+	-moz-box-shadow: 0 0 0px ; 
+    -webkit-box-shadow: 0 0 0px ; 
+    box-shadow: 0 0 0px ;
+    color:  #eee;
+    background-color:#996803;
+}
+
   	</style>
   	<script>
   		$(document).ready(function() {
@@ -467,10 +562,20 @@ a:hover{
 				});
 
 				$(".largepaper").click(function(){
-					$(this) .addClass('show2')
-					$(".btn01") .removeClass('pressed')
+					$(this) .addClass('show2');
+					$(".btn01") .removeClass('pressed');
 
 				});
+                
+                $(".feed").click(function(){
+                	$(this).addClass('pressed');
+					$(".pizza") .addClass('drop');
+					$(".pizza2") .addClass('drop2');
+					$(".pizza3").addClass('drop3');
+
+				});
+
+
 
 				});
 
@@ -507,11 +612,21 @@ a:hover{
 
   <div class="hat"><img src="hat.png" height="80" ></div>
 
+  <div class="pizza"><img src="pizza.png" height="35" ></div>
+
+  <div class="pizza2"><img src="pizza.png" height="35" ></div>
+
+  <div class="pizza3"><img src="pizza.png" height="35" ></div>
+  
+
   </div>
   <div class="tag btn01">
   	Human
-  	<br>
-  	----------------------------------------------------------------------------
+  	<br><br>
+
+  	<div class="human"><img src="human.svg" height="40" ></div>
+
+  	<h6>Ruthless, Fierce and Aggressive</h6>
   </div>
 
  <div class="fox"><img src="fox.png" height="280" ></div>
@@ -527,7 +642,7 @@ a:hover{
   <br><br>  <br><br>  <br>
   <div class="human"><img src="human.svg" height="150" ></div>
    <br><br> 
-  <h1>Ruthless, Fierce and Aggresive</h1>
+  <h1>Ruthless, Fierce and Aggressive</h1>
   
   
   
@@ -536,8 +651,9 @@ a:hover{
 
   </div>
   
-  <div class="exit"><a href="../index.html">EXIT</a></div>
-
+  <div class="exit"><a href="../index.html"><img src="exit.png" height="60" ></a></div>
+  
+  <div class="feed">FEED THE HUMANs</div>
   </div>
   
   
