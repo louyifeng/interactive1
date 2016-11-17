@@ -1,0 +1,250 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+
+  <title>
+    Project 3
+  </title>
+  <style>
+  body{
+   margin: 0;
+   font-family: 'Open Sans', sans-serif;
+  }
+  #follower{
+  position : relative;
+  background-color : red;
+  width:35px;
+  height:35px;
+  border-radius:50%;
+}
+
+.centerdiv {
+    top: 36%;
+    width:100%;
+    position:absolute;
+}
+.container{
+    bottom: 0;
+    width:100%; 
+    position:absolute;
+    overflow:hidden;
+}
+
+
+  .line{
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: black;
+    top: 40%;
+  }
+
+
+  
+  .time{
+    float: left;
+    top: 42%;
+  }
+  .n1am{
+    left: 2%;
+    position: absolute;
+    transition: 0.2s;
+    height: 100%;
+    width: 10%;
+
+  }
+
+  .n1am:hover{
+    font-size: 32px;
+    
+  }
+
+  .n3am{
+    left: 12%;
+    position: absolute;
+    transition: 0.2s;
+    height: 80%;
+  }
+
+  .n3am:hover{
+    transform: scale(1.9);
+  }
+
+
+  .n5am{
+    left: 22%;
+    position: absolute;
+    transition: 0.2s;
+    height: 80%;
+  }
+
+  .n5am:hover{
+    transform: scale(1.9);
+  }
+
+
+  .n7am{
+    left: 32%;
+    position: absolute;
+    transition: 0.2s;
+    height: 80%;
+  }
+
+  .n7am:hover{
+    transform: scale(1.9);
+  }
+
+
+  .n9am{
+    left: 42%;
+    position: absolute;
+    transition: 0.2s;
+    height: 80%;
+  }
+
+  .n9am:hover{
+    transform: scale(1.9);
+  }
+
+
+  .n12pm{
+    left: 52%;
+    position: absolute;
+    transition: 0.2s;
+    height: 80%;
+  }
+
+  .n12pm:hover{
+    transform: scale(1.9);
+  }
+
+  .n3pm{
+    left: 62%;
+    position: absolute;
+    transition: 0.2s;
+    height: 80%;
+  }
+
+  .n3pm:hover{
+    transform: scale(1.9);
+  }
+
+  .n6pm{
+    left: 72%;
+    position: absolute;
+    transition: 0.2s;
+    height: 80%;
+  }
+
+  .n6pm:hover{
+    transform: scale(1.9);
+  }
+
+  .n9pm{
+    left: 82%;
+    position: absolute;
+    transition: 0.2s;
+    height: 80%;
+  }
+
+  .n9pm:hover{
+    transform: scale(1.9);
+  }
+
+
+  .n12am{
+    left: 92%;
+    position: absolute;
+    transition: 0.2s;
+    height: 80%;
+  }
+
+  .n12am:hover{
+    transform: scale(1.9);
+  }
+
+  .map{
+    position: absolute;
+    top: 47%;
+    max-width: 100%;
+  }
+
+  img{
+     max-width: 100%;
+     height: auto;
+  }
+ 
+  .dot{
+     height: 30px;
+     width: 30px;
+     border-radius: 50%;
+     background-color: red;
+     position: absolute;
+     top: 70%;
+     left: 30%;
+  }
+
+ 
+  </style>
+
+  <script type='text/javascript'>//<![CDATA[
+$(window).load(function(){
+var mouseX = 0, mouseY = 0, limitX = 1500- 0, limitY = 0-0;
+$(window).mousemove(function(e){
+  var offset = $('.container').offset();
+   mouseX = Math.min(e.pageX - offset.left, limitX);
+   mouseY = Math.min(e.pageY - offset.top, limitY);
+   if (mouseX < 0) mouseX = 0;
+   if (mouseY < 0) mouseY = 0;
+});
+
+// cache the selector
+var follower = $("#follower");
+var xp = 0, yp = 0;
+var loop = setInterval(function(){
+    // change 12 to alter damping higher is slower
+    xp += (mouseX - xp) / 12;
+    yp += (mouseY - yp) / 12;
+    follower.css({left:xp, top:yp});
+    
+}, 30);
+});//]]> 
+
+</script>
+</head>
+
+
+<body>
+
+
+<div class="centerdiv">
+<div class="container">
+<div id="follower"></div>
+</div></div>
+<div class="line">
+</div>
+
+
+
+<div class="map"><img src="map.png" height="600px"></div>
+<div class="dot"></div>
+
+<div class="time n1am">1AM</div>
+<div class="time n3am">3AM</div>
+<div class="time n5am">5AM</div>
+<div class="time n7am">7AM</div>
+<div class="time n9am">9AM</div>
+<div class="time n12pm">12PM</div>
+<div class="time n3pm">3PM</div>
+<div class="time n6pm">6PM</div>
+<div class="time n9pm">9PM</div>
+<div class="time n12am">12AM</div>
+</body>
+</html>
+
+
