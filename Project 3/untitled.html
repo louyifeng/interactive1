@@ -14,7 +14,8 @@
   body{
    margin: 0;
    font-family: 'Open Sans', sans-serif;
-       background-size: 100%;
+   background-size: 200%;
+   min-width: 150px;
   }
   #follower{
   position : relative;
@@ -51,7 +52,7 @@
     float: left;
     top: 42%;
   }
-  .n1am{
+  .n8am{
     left: 2%;
     position: absolute;
     transition: 0.2s;
@@ -60,12 +61,13 @@
 
   }
 
-  .n1am:hover{
-    transform: scale(1.9)
+  .n8am:hover{
+    transform: scale(1.9);
+    padding-left: 35px;
     
   }
 
-  .n3am{
+  .n10am{
     left: 12%;
     position: absolute;
     transition: 0.2s;
@@ -73,52 +75,14 @@
     width: 10%;
   }
 
-  .n3am:hover{
+  .n10am:hover{
     transform: scale(1.9);
-  }
-
-
-  .n5am{
-    left: 22%;
-    position: absolute;
-    transition: 0.2s;
-    height: 80%;
-    width: 10%;
-  }
-
-  .n5am:hover{
-    transform: scale(1.9);
-  }
-
-
-  .n7am{
-    left: 32%;
-    position: absolute;
-    transition: 0.2s;
-    height: 80%;
-    width: 10%;
-  }
-
-  .n7am:hover{
-    transform: scale(1.9);
-  }
-
-
-  .n9am{
-    left: 42%;
-    position: absolute;
-    transition: 0.2s;
-    height: 80%;
-    width: 10%;
-  }
-
-  .n9am:hover{
-    transform: scale(1.9);
+    padding-left: 35px;
   }
 
 
   .n12pm{
-    left: 52%;
+    left: 22%;
     position: absolute;
     transition: 0.2s;
     height: 80%;
@@ -127,10 +91,26 @@
 
   .n12pm:hover{
     transform: scale(1.9);
+    padding-left: 35px;
   }
 
+
+  .n1pm{
+    left: 32%;
+    position: absolute;
+    transition: 0.2s;
+    height: 80%;
+    width: 10%;
+  }
+
+  .n1pm:hover{
+    transform: scale(1.9);
+    padding-left: 35px;
+  }
+
+
   .n3pm{
-    left: 62%;
+    left: 42%;
     position: absolute;
     transition: 0.2s;
     height: 80%;
@@ -139,10 +119,25 @@
 
   .n3pm:hover{
     transform: scale(1.9);
+    padding-left: 35px;
+  }
+
+
+  .n4pm{
+    left: 52%;
+    position: absolute;
+    transition: 0.2s;
+    height: 80%;
+    width: 10%;
+  }
+
+  .n4pm:hover{
+    transform: scale(1.9);
+    padding-left: 35px;
   }
 
   .n6pm{
-    left: 72%;
+    left: 62%;
     position: absolute;
     transition: 0.2s;
     height: 80%;
@@ -151,9 +146,23 @@
 
   .n6pm:hover{
     transform: scale(1.9);
+    padding-left: 35px;
   }
 
-  .n9pm{
+  .n8pm{
+    left: 72%;
+    position: absolute;
+    transition: 0.2s;
+    height: 80%;
+    width: 10%;
+  }
+
+  .n8pm:hover{
+    transform: scale(1.9);
+    padding-left: 35px;
+  }
+
+  .n10pm{
     left: 82%;
     position: absolute;
     transition: 0.2s;
@@ -161,12 +170,14 @@
     width: 10%;
   }
 
-  .n9pm:hover{
+  .n10pm:hover{
     transform: scale(1.9);
+    padding-left: 35px;
+
   }
 
 
-  .n12am{
+  .n0am{
     left: 92%;
     position: absolute;
     transition: 0.2s;
@@ -174,8 +185,9 @@
     width: 10%;
   }
 
-  .n12am:hover{
+  .n0am:hover{
     transform: scale(1.9);
+    padding-left: 35px;
   }
 
   .map{
@@ -196,6 +208,14 @@
      position: absolute;
      top: 70%;
      left: 30%;
+  }
+
+  .white{
+    color: white;
+  }
+
+  .linewhite{
+    background-color: white;
   }
   
   .pier39{
@@ -239,15 +259,31 @@ var loop = setInterval(function(){
 <script>
 
 $(document).ready(function(){
-$(".n3am").hover(
+$(".n3pm").hover(
 
         function(){
         // hover in
 
         $("body").addClass('pier39');
+        $(this).addClass('white');
       },
       function(){
         $("body").removeClass('pier39');
+        $(this).removeClass('white');
+        // hover out
+      });
+
+$(".n9pm").hover(
+
+        function(){
+        // hover in
+
+        $("body").addClass('pier39');
+        $("time").addClass('white');
+      },
+      function(){
+        $("body").removeClass('pier39');
+        $("time").removeClass('white');
         // hover out
       });
 });
@@ -271,16 +307,16 @@ $(".n3am").hover(
 <div class="map"><div class="dot"></div></div>
 
 
-<div class="time n1am">1AM</div>
-<div class="time n3am">3AM</div>
-<div class="time n5am">5AM</div>
-<div class="time n7am">7AM</div>
-<div class="time n9am">9AM</div>
-<div class="time n12pm">12PM</div>
+<div class="time n8am">8AM</div>
+<div class="time n10am">10AM</div>
+<div class="time n12pm">11AM</div>
+<div class="time n1pm">1PM</div>
 <div class="time n3pm">3PM</div>
+<div class="time n4pm">4PM</div>
 <div class="time n6pm">6PM</div>
-<div class="time n9pm">9PM</div>
-<div class="time n12am">12AM</div>
+<div class="time n8pm">8PM</div>
+<div class="time n10pm">10PM</div>
+<div class="time n0am">12AM</div>
 </body>
 </html>
 

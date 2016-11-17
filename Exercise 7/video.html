@@ -1,0 +1,72 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+  <title>
+    Exercise 7
+  </title>
+  <style>
+
+
+   #pause-vid{
+   	display: none;
+   }
+
+
+  </style>
+
+  <script type="text/javascript">
+  	
+  	$(document).ready(function(){
+      
+      $("#play-vid").click(function(){
+
+      	$(this).hide();
+        $("#pause-vid").show();
+        $("#bart")[0].play();
+      });
+
+      $("#pause-vid").click(function(){
+      	$(this).hide();
+      	$("#play-vid").show();
+
+      	$("#bart")[0].pause();
+
+      	});
+
+      $("#bart").on('ended', function(){
+        
+        $("#play-vid").show();
+        $("#pause-vid").hide();
+
+      });   
+
+  	})
+
+  </script>
+</head>
+
+
+<body>
+  
+  <button id="play-vid">PLAY</button>
+  <button id="pause-vid">PAUSE</button>
+
+  <br />
+  <br />
+
+  <video id="bart" width="360" height="640" controls autoplay>
+  	<source src="bart.mp4" type="video/mp4">
+  </video>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/MsNwe_12iok" frameborder="0" allowfullscreen></iframe>
+
+
+</body>
+</html>
+
+
