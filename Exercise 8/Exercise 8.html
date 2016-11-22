@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen">
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  <title>
+    Exercise 8
+  </title>
+
+  <style>
+
+  	.fancybox-title {
+  		font-size:3.0em;
+  	}
+
+
+
+  </style>
+
+  <script>
+		$(document).ready(function() {
+
+			$(".fancybox").fancybox({
+				nextEffect:'none',
+        prevEffect:'none'
+			});
+
+		});
+  </script>
+
+
+
+</head>
+<body>
+  
+		<a class="fancybox" rel="mt_shasta" href="1.jpg" title="1">
+    <img src="1_thumb.jpg" />
+    </a>
+
+		<a class="fancybox" rel="mt_shasta" href="2.jpg" title="2">
+		<img src="2_thumb.jpg" />	
+		</a>
+
+		<a class="fancybox" rel="mt_shasta" href="3.jpg" title="3">
+		<img src="3_thumb.jpg" />	
+		</a>
+
+
+</body>
+
+</html>

@@ -14,15 +14,33 @@
   body{
    margin: 0;
    font-family: 'Open Sans', sans-serif;
-   background-size: 200%;
-   min-width: 150px;
+    min-width: 150px;
   }
+
+  .container2{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-color: black;
+    bottom: 0;
+    position:absolute;
+    overflow:hidden;   
+
+  }
+
+
+
+  
+
   #follower{
   position : relative;
-  background-color : #C31010;
   width:35px;
   height:35px;
   border-radius:50%;
+  opacity: 0.75;
 }
 
 .centerdiv {
@@ -42,8 +60,9 @@
     width: 100%;
     height: 4px;
     position: absolute;
-    background-color: black;
+    background-color: white;
     top: 40%;
+    opacity: 0.7;
   }
 
 
@@ -58,12 +77,15 @@
     transition: 0.2s;
     height: 80%;
     width: 10%;
+    color: white;
+    opacity: 0.7;
 
   }
 
   .n8am:hover{
     transform: scale(1.9);
     padding-left: 35px;
+    opacity: 0.9;
     
   }
 
@@ -73,11 +95,14 @@
     transition: 0.2s;
     height: 80%;
     width: 10%;
+    color: white;
+    opacity: 0.7;
   }
 
   .n10am:hover{
     transform: scale(1.9);
     padding-left: 35px;
+    opacity: 0.9;
   }
 
 
@@ -87,11 +112,14 @@
     transition: 0.2s;
     height: 80%;
     width: 10%;
+    color: white;
+    opacity: 0.7;
   }
 
   .n12pm:hover{
     transform: scale(1.9);
     padding-left: 35px;
+    opacity: 0.9;
   }
 
 
@@ -101,11 +129,14 @@
     transition: 0.2s;
     height: 80%;
     width: 10%;
+    color: white;
+    opacity: 0.7;
   }
 
   .n1pm:hover{
     transform: scale(1.9);
     padding-left: 35px;
+    opacity: 0.9;
   }
 
 
@@ -115,11 +146,14 @@
     transition: 0.2s;
     height: 80%;
     width: 10%;
+    color: white;
+    opacity: 0.7;
   }
 
   .n3pm:hover{
     transform: scale(1.9);
     padding-left: 35px;
+    opacity: 0.9;
   }
 
 
@@ -129,11 +163,14 @@
     transition: 0.2s;
     height: 80%;
     width: 10%;
+    color: white;
+    opacity: 0.7;
   }
 
   .n4pm:hover{
     transform: scale(1.9);
-    padding-left: 35px;
+    padding-left: -35px;
+    opacity: 0.9;
   }
 
   .n6pm{
@@ -142,11 +179,14 @@
     transition: 0.2s;
     height: 80%;
     width: 10%;
+    color: white;
+    opacity: 0.7;
   }
 
   .n6pm:hover{
     transform: scale(1.9);
-    padding-left: 35px;
+    padding-left: -35px;
+    opacity: 0.9;
   }
 
   .n8pm{
@@ -155,11 +195,14 @@
     transition: 0.2s;
     height: 80%;
     width: 10%;
+    color: white;
+    opacity: 0.7;
   }
 
   .n8pm:hover{
     transform: scale(1.9);
-    padding-left: 35px;
+    padding-left: -35px;
+    opacity: 0.9;
   }
 
   .n10pm{
@@ -168,11 +211,14 @@
     transition: 0.2s;
     height: 80%;
     width: 10%;
+    color: white;
+    opacity: 0.7;
   }
 
   .n10pm:hover{
     transform: scale(1.9);
-    padding-left: 35px;
+    padding-left: -35px;
+    opacity: 0.9;
 
   }
 
@@ -183,21 +229,25 @@
     transition: 0.2s;
     height: 80%;
     width: 10%;
+    color: white;
+    opacity: 0.7;
   }
 
   .n0am:hover{
     transform: scale(1.9);
-    padding-left: 35px;
+    padding-left: -35px;
+    opacity: 0.9;
   }
 
   .map{
     position: absolute;
-    top: 47%;
-    max-width: 100%;
+    top: 60%;
     background-image: url('map.png');
     background-size: cover;
+    width: 80%;
+    left: 15%;
     height: 50%;
-    width: 100%;
+    opacity: 0.7;
   }
 
   .dot{
@@ -220,13 +270,87 @@
   
   .pier39{
     background-image: url('pier39.jpg');
-    animation: reveal 0.1s;
   }
+
+  .marketstreet{
+    background-image: url('marketstreet.jpg');
+  }
+
+  .piano{
+    background-image: url('piano.jpg');
+  }
+
+  .light{
+    background-image: url('light.jpg');
+  }
+
+
+  
+  .reveal{
+    animation: reveal 1s;
+  }
+
+  .disappear{
+    animation: disappear 1s;
+
+  }
+
+  .color1{
+    background-color: #FFEA29;
+  }
+
+  .color2{
+    background-color: #FFCD29;
+  }
+
+  .color3{
+    background-color: #FFBF29;
+  }
+
+  .color4{
+    background-color: #FF9B29;
+  }
+
+  .color5{
+    background-color: #FF8629;
+  }
+
+  .color6{
+    background-color: #FF6004;
+  }
+
+  .color7{
+    background-color: #FF4704;
+  }
+
+  .color8{
+    background-image: url(moon.png);
+    background-size: cover;
+  }
+
+  .color9{
+    background-image: url(moon.png);
+    background-size: cover;
+  }
+
+  .color10{
+    background-image: url(moon.png);
+    background-size: cover;
+  }
+
+
 
   @keyframes reveal{
     from{opacity: 0}
     to{opacity: 1}
   }
+
+  @keyframes disappear{
+    from{opacity: 1}
+    to{opacity: 0}
+  }
+
+
  
   </style>
 
@@ -259,33 +383,268 @@ var loop = setInterval(function(){
 <script>
 
 $(document).ready(function(){
-$(".n3pm").hover(
+
+
+ $(".n8am").hover(
 
         function(){
         // hover in
 
-        $("body").addClass('pier39');
-        $(this).addClass('white');
-      },
-      function(){
-        $("body").removeClass('pier39');
-        $(this).removeClass('white');
-        // hover out
-      });
-
-$(".n9pm").hover(
-
-        function(){
-        // hover in
-
-        $("body").addClass('pier39');
+        $(".container2").addClass('marketstreet');
         $("time").addClass('white');
+        $(".line").addClass('linewhite');
+        $(this).addClass('white');
+        $(".marketstreet").addClass('reveal');
+        $("#follower").addClass('color1');
+        
+
       },
       function(){
-        $("body").removeClass('pier39');
+        $(".container2").removeClass('marketstreet');
         $("time").removeClass('white');
+        $(".line").removeClass('linewhite');
+        $(this).removeClass('white');
+        $(".marketstreet").removeClass('reveal');
+        $("#follower").removeClass('color1');
+  
+        
         // hover out
       });
+
+ $(".n10am").hover(
+
+        function(){
+        // hover in
+
+        $(".container2").addClass('marketstreet');
+        $("time").addClass('white');
+        $(".line").addClass('linewhite');
+        $(this).addClass('white');
+        $(".marketstreet").addClass('reveal');
+        $("#follower").addClass('color2');
+        
+
+      },
+      function(){
+        $(".container2").removeClass('marketstreet');
+        $("time").removeClass('white');
+        $(".line").removeClass('linewhite');
+        $(this).removeClass('white');
+        $(".marketstreet").removeClass('reveal');
+        $("#follower").removeClass('color2');
+  
+        
+        // hover out
+      });
+
+ $(".n12pm").hover(
+
+        function(){
+        // hover in
+
+        $(".container2").addClass('marketstreet');
+        $("time").addClass('white');
+        $(".line").addClass('linewhite');
+        $(this).addClass('white');
+        $(".marketstreet").addClass('reveal');
+        $("#follower").addClass('color3');
+        
+
+      },
+      function(){
+        $(".container2").removeClass('marketstreet');
+        $("time").removeClass('white');
+        $(".line").removeClass('linewhite');
+        $(this).removeClass('white');
+        $(".marketstreet").removeClass('reveal');
+        $("#follower").removeClass('color3');
+  
+        
+        // hover out
+      });
+
+ $(".n1pm").hover(
+
+        function(){
+        // hover in
+
+        $(".container2").addClass('piano');
+        $("time").addClass('white');
+        $(".line").addClass('linewhite');
+        $(this).addClass('white');
+        $(".piano").addClass('reveal');
+        $("#follower").addClass('color4');
+        
+
+      },
+      function(){
+        $(".container2").removeClass('piano');
+        $("time").removeClass('white');
+        $(".line").removeClass('linewhite');
+        $(this).removeClass('white');
+        $(".piano").removeClass('reveal');
+        $("#follower").removeClass('color4');
+  
+        
+        // hover out
+      });
+
+ $(".n3pm").hover(
+
+        function(){
+        // hover in
+
+        $(".container2").addClass('pier39');
+        $(this).addClass('white');
+        $(".pier39").addClass('reveal');
+        $(".line").addClass('linewhite');
+        $("#follower").addClass('color5');
+
+        
+      },
+      function(){
+        $(".container2").removeClass('pier39');
+        $(this).removeClass('white');
+        $(".pier39").removeClass('reveal');
+        $(".line").removeClass('linewhite');
+        $("#follower").removeClass('color5');
+        
+        // hover out
+      });
+
+$(".n4pm").hover(
+
+        function(){
+        // hover in
+
+        $(".container2").addClass('marketstreet');
+        $("time").addClass('white');
+        $(".line").addClass('linewhite');
+        $(this).addClass('white');
+        $(".marketstreet").addClass('reveal');
+        $("#follower").addClass('color6');
+        
+
+      },
+      function(){
+        $(".container2").removeClass('marketstreet');
+        $("time").removeClass('white');
+        $(".line").removeClass('linewhite');
+        $(this).removeClass('white');
+        $(".marketstreet").removeClass('reveal');
+        $("#follower").removeClass('color6');
+  
+        
+        // hover out
+      });
+
+ $(".n6pm").hover(
+
+        function(){
+        // hover in
+
+        $(".container2").addClass('marketstreet');
+        $("time").addClass('white');
+        $(".line").addClass('linewhite');
+        $(this).addClass('white');
+        $(".marketstreet").addClass('reveal');
+        $("#follower").addClass('color7');
+        
+
+      },
+      function(){
+        $(".container2").removeClass('marketstreet');
+        $("time").removeClass('white');
+        $(".line").removeClass('linewhite');
+        $(this).removeClass('white');
+        $(".marketstreet").removeClass('reveal');
+        $("#follower").removeClass('color7');
+  
+        
+        // hover out
+      });
+
+ $(".n8pm").hover(
+
+        function(){
+        // hover in
+
+        $(".container2").addClass('light');
+        $("time").addClass('white');
+        $(".line").addClass('linewhite');
+        $(this).addClass('white');
+        $(".light").addClass('reveal');
+        $("#follower").addClass('color8');
+        
+
+      },
+      function(){
+        $(".container2").removeClass('light');
+        $("time").removeClass('white');
+        $(".line").removeClass('linewhite');
+        $(this).removeClass('white');
+        $(".light").removeClass('reveal');
+        $("#follower").removeClass('color8');
+  
+        
+        // hover out
+      });
+
+  $(".n10pm").hover(
+
+        function(){
+        // hover in
+
+        $(".container2").addClass('marketstreet');
+        $("time").addClass('white');
+        $(".line").addClass('linewhite');
+        $(this).addClass('white');
+        $(".marketstreet").addClass('reveal');
+        $("#follower").addClass('color9');
+        
+
+      },
+      function(){
+        $(".container2").removeClass('marketstreet');
+        $("time").removeClass('white');
+        $(".line").removeClass('linewhite');
+        $(this).removeClass('white');
+        $(".marketstreet").removeClass('reveal');
+        $("#follower").removeClass('color9');
+  
+        
+        // hover out
+      });
+
+  $(".n0am").hover(
+
+        function(){
+        // hover in
+
+        $(".container2").addClass('marketstreet');
+        $("time").addClass('white');
+        $(".line").addClass('linewhite');
+        $(this).addClass('white');
+        $(".marketstreet").addClass('reveal');
+        $("#follower").addClass('color10');
+        
+
+      },
+      function(){
+        $(".container2").removeClass('marketstreet');
+        $("time").removeClass('white');
+        $(".line").removeClass('linewhite');
+        $(this).removeClass('white');
+        $(".marketstreet").removeClass('reveal');
+        $("#follower").removeClass('color10');
+  
+        
+        // hover out
+      });
+
+ 
+
+  
 });
 
 </script>
@@ -293,6 +652,7 @@ $(".n9pm").hover(
 
 
 <body>
+<div class="container2">
 
 
 <div class="centerdiv">
@@ -304,19 +664,24 @@ $(".n9pm").hover(
 
 
 
-<div class="map"><div class="dot"></div></div>
+
 
 
 <div class="time n8am">8AM</div>
 <div class="time n10am">10AM</div>
-<div class="time n12pm">11AM</div>
+<div class="time n12pm">12PM</div>
 <div class="time n1pm">1PM</div>
 <div class="time n3pm">3PM</div>
 <div class="time n4pm">4PM</div>
 <div class="time n6pm">6PM</div>
 <div class="time n8pm">8PM</div>
 <div class="time n10pm">10PM</div>
-<div class="time n0am">12AM</div>
+<div class="time n0am">0AM</div>
+<div class="map"><div class="dot"></div></div>
+
+</div>
+
+
 </body>
 </html>
 
