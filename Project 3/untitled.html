@@ -12,8 +12,8 @@
   </title>
   <style>
   body{
-   margin: 0;
-   font-family: 'Open Sans', sans-serif;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
     min-width: 150px;
   }
 
@@ -242,23 +242,30 @@
   .map{
     position: absolute;
     top: 60%;
-    background-image: url('map.png');
+    background-image: url('map copy.png');
     background-size: cover;
     width: 80%;
     left: 15%;
     height: 50%;
-    opacity: 0.7;
+    opacity: 0.8;
   }
 
   .dot{
-     height: 30px;
-     width: 30px;
+     height: 20px;
+     width: 20px;
      border-radius: 50%;
      background-color: #C31010;
      position: absolute;
-     top: 70%;
+     top: 40%;
      left: 30%;
+     animation:aaa 0.5s infinite;
+     -webkit-animation-direction:alternate;
   }
+
+ @keyframes aaa{
+  from{opacity: 0;}
+  to{opacity: 1;}
+ }
 
   .white{
     color: white;
