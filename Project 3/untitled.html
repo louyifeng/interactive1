@@ -93,7 +93,6 @@
   .n8am{
     left: 2%;
     transition: 0.2s;
-    height: 80%;
     width: 10%;
     color: white;
     opacity: 0.7;
@@ -315,12 +314,12 @@
   }
 
   .reveal{
-    animation: reveal 0.2s;
+    animation: reveal 0.5s;
     animation-fill-mode: forwards;
   }
 
   .disappear{
-    animation: disappear 0.2s;
+    animation: disappear 0.5s;
 
   }
 
@@ -428,7 +427,7 @@ $(document).ready(function(){
 
         function(){
         // hover in
-
+        $(".container2").removeClass('disappear');
         $(".container2").addClass('morning');
         $(".morning").addClass('reveal');
         $("#follower").addClass('color1');
@@ -439,6 +438,7 @@ $(document).ready(function(){
         $(".container2").removeClass('reveal');
         $(".container2").removeClass('morning');
         $("#follower").removeClass('color1');
+        $(".container2").addClass('disappear');
   
         
         // hover out
@@ -448,7 +448,7 @@ $(document).ready(function(){
 
         function(){
         // hover in
-
+        $(".container2").removeClass('disappear');
         $(".container2").addClass('janice');
         $(".janice").addClass('reveal');
         $("#follower").addClass('color2');
@@ -459,6 +459,7 @@ $(document).ready(function(){
         $(".container2").removeClass('reveal');
         $(".container2").removeClass('janice');
         $("#follower").removeClass('color2');
+        $(".container2").addClass('disappear');
   
         
         // hover out
@@ -468,7 +469,7 @@ $(document).ready(function(){
 
         function(){
         // hover in
-
+        $(".container2").removeClass('disappear');
         $(".container2").addClass('marketstreet');
         $(".marketstreet").addClass('reveal');
         $("#follower").addClass('color3');
@@ -479,6 +480,7 @@ $(document).ready(function(){
         $(".container2").removeClass('reveal');
         $(".container2").removeClass('marketstreet');
         $("#follower").removeClass('color3');
+        $(".container2").addClass('disappear');
   
         
         // hover out
@@ -488,10 +490,11 @@ $(document).ready(function(){
 
         function(){
         // hover in
-
+        $(".container2").removeClass('disappear');
         $(".container2").addClass('piano');
         $(".piano").addClass('reveal');
         $("#follower").addClass('color4');
+        $(".nophotos").removeClass('disappear');
         
 
       },
@@ -500,7 +503,9 @@ $(document).ready(function(){
         $(".container2").removeClass('piano');
         $("#follower").removeClass('color4');
         $(".nophotos") .removeClass('reveal');
-  
+        $(".container2").addClass('disappear');
+        $(".nophotos").addClass('disappear');
+        
         
         // hover out
       });
@@ -509,7 +514,7 @@ $(document).ready(function(){
 
         function(){
         // hover in
-
+        $(".container2").removeClass('disappear');
         $(".container2").addClass('stanley');
         $(".stanley").addClass('reveal');
         $(".line").addClass('linewhite');
@@ -521,6 +526,7 @@ $(document).ready(function(){
         $(".container2").removeClass('stanley');
         $(".container2").removeClass('reveal');
         $("#follower").removeClass('color5');
+        $(".container2").addClass('disappear');
         
         // hover out
       });
@@ -529,7 +535,7 @@ $(".n4pm").hover(
 
         function(){
         // hover in
-
+        $(".container2").removeClass('disappear');
         $(".container2").addClass('chinatown');
         $(".chinatown").addClass('reveal');
         $("#follower").addClass('color6');
@@ -541,6 +547,7 @@ $(".n4pm").hover(
         $(".container2").removeClass('chinatown');
         $("#follower").removeClass('color6');
         $(".nophotos") .removeClass('reveal');
+        $(".container2").addClass('disappear');
   
         
         // hover out
@@ -550,7 +557,7 @@ $(".n4pm").hover(
 
         function(){
         // hover in
-
+        $(".container2").removeClass('disappear');
         $(".container2").addClass('pier39');
         $(".pier39").addClass('reveal');
         $("#follower").addClass('color7');
@@ -561,6 +568,7 @@ $(".n4pm").hover(
         $(".container2").removeClass('reveal');
         $(".container2").removeClass('pier39');
         $("#follower").removeClass('color7');
+        $(".container2").addClass('disappear');
   
         
         // hover out
@@ -570,7 +578,7 @@ $(".n4pm").hover(
 
         function(){
         // hover in
-
+        $(".container2").removeClass('disappear');
         $(".container2").addClass('light');
         $(".light").addClass('reveal');
         $("#follower").addClass('color8');
@@ -581,6 +589,7 @@ $(".n4pm").hover(
         $(".container2").removeClass('reveal');
         $(".container2").removeClass('light');
         $("#follower").removeClass('color8');
+        $(".container2").addClass('disappear');
   
         
         // hover out
@@ -590,7 +599,7 @@ $(".n4pm").hover(
 
         function(){
         // hover in
-
+        $(".container2").removeClass('disappear');
         $(".container2").addClass('night');
         $(".night").addClass('reveal');
         $("#follower").addClass('color9');
@@ -601,6 +610,7 @@ $(".n4pm").hover(
         $(".container2").removeClass('night');
         $(".container2").removeClass('reveal');
         $("#follower").removeClass('color9');
+        $(".container2").addClass('disappear');
   
         
         // hover out
@@ -610,7 +620,7 @@ $(".n4pm").hover(
 
         function(){
         // hover in
-
+        $(".container2").removeClass('disappear');
         $(".container2").addClass('beat');
         $(".beat").addClass('reveal');
         $("#follower").addClass('color10');
@@ -621,6 +631,7 @@ $(".n4pm").hover(
         $(".container2").removeClass('reveal');
         $(".container2").removeClass('beat');
         $("#follower").removeClass('color10');
+        $(".container2").addClass('disappear');
   
         
         // hover out
