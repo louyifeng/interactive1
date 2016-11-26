@@ -15,9 +15,24 @@
     margin:0;
     font-family: 'Open Sans', sans-serif;
     min-width: 150px;
+    background-color: black;
   }
 
   .container2{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-width: 150px;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-color: black;
+    bottom: 0;
+    position:absolute;
+    overflow:hidden;   
+
+  }
+
+  .container3{
     overflow: hidden;
     width: 100%;
     height: 100%;
@@ -40,7 +55,8 @@
   width:35px;
   height:35px;
   border-radius:50%;
-  opacity: 0.75;
+   animation:aaa 0.5s infinite;
+  -webkit-animation-direction:alternate;
 }
 
 .centerdiv {
@@ -70,6 +86,7 @@
   .time{
     float: left;
     top: 42%;
+    font-size: 1em;
   }
   .n8am{
     left: 2%;
@@ -137,6 +154,7 @@
     transform: scale(1.9);
     padding-left: 35px;
     opacity: 0.9;
+    cursor: pointer;
   }
 
 
@@ -255,7 +273,7 @@
      width: 20px;
      border-radius: 50%;
      background-color: #C31010;
-     position: absolute;
+     position: relative;
      top: 40%;
      left: 30%;
      animation:aaa 0.5s infinite;
@@ -264,16 +282,9 @@
 
  @keyframes aaa{
   from{opacity: 0;}
-  to{opacity: 1;}
+  to{opacity: 0.8;}
  }
 
-  .white{
-    color: white;
-  }
-
-  .linewhite{
-    background-color: white;
-  }
   
   .pier39{
     background-image: url('pier39.jpg');
@@ -281,6 +292,10 @@
 
   .marketstreet{
     background-image: url('marketstreet.jpg');
+  }
+
+  .morning{
+    background-image: url('morning.jpg');
   }
 
   .piano{
@@ -291,14 +306,33 @@
     background-image: url('light.jpg');
   }
 
-
+  .night{
+    top: 5%;
+    background-image: url('night.jpg' );
+    background-size: 100% auto;
+  }
   
+  .beat{
+    background-image: url('beat.jpg');
+    background-size: cover;
+
+  }
+
+  .janice{
+    background-image: url(janice.jpg);
+  }
+
+  .stanley{
+    background-image: url(stanley.jpg);
+  }
+
   .reveal{
-    animation: reveal 1s;
+    animation: reveal 0.2s;
+    animation-fill-mode: forwards;
   }
 
   .disappear{
-    animation: disappear 1s;
+    animation: disappear 0.2s;
 
   }
 
@@ -343,6 +377,16 @@
   .color10{
     background-image: url(moon.png);
     background-size: cover;
+  }
+
+  .nophotos{
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    width: 100%;
+    text-align: center;
+    top: 25%;
+    opacity: 0;
   }
 
 
@@ -397,21 +441,15 @@ $(document).ready(function(){
         function(){
         // hover in
 
-        $(".container2").addClass('marketstreet');
-        $("time").addClass('white');
-        $(".line").addClass('linewhite');
-        $(this).addClass('white');
-        $(".marketstreet").addClass('reveal');
+        $(".container2").addClass('morning');
+        $(".morning").addClass('reveal');
         $("#follower").addClass('color1');
         
 
       },
       function(){
-        $(".container2").removeClass('marketstreet');
-        $("time").removeClass('white');
-        $(".line").removeClass('linewhite');
-        $(this).removeClass('white');
-        $(".marketstreet").removeClass('reveal');
+        $(".container2").removeClass('reveal');
+        $(".container2").removeClass('morning');
         $("#follower").removeClass('color1');
   
         
@@ -423,21 +461,15 @@ $(document).ready(function(){
         function(){
         // hover in
 
-        $(".container2").addClass('marketstreet');
-        $("time").addClass('white');
-        $(".line").addClass('linewhite');
-        $(this).addClass('white');
-        $(".marketstreet").addClass('reveal');
+        $(".container2").addClass('janice');
+        $(".janice").addClass('reveal');
         $("#follower").addClass('color2');
         
 
       },
       function(){
-        $(".container2").removeClass('marketstreet');
-        $("time").removeClass('white');
-        $(".line").removeClass('linewhite');
-        $(this).removeClass('white');
-        $(".marketstreet").removeClass('reveal');
+        $(".container2").removeClass('reveal');
+        $(".container2").removeClass('janice');
         $("#follower").removeClass('color2');
   
         
@@ -450,20 +482,14 @@ $(document).ready(function(){
         // hover in
 
         $(".container2").addClass('marketstreet');
-        $("time").addClass('white');
-        $(".line").addClass('linewhite');
-        $(this).addClass('white');
         $(".marketstreet").addClass('reveal');
         $("#follower").addClass('color3');
         
 
       },
       function(){
+        $(".container2").removeClass('reveal');
         $(".container2").removeClass('marketstreet');
-        $("time").removeClass('white');
-        $(".line").removeClass('linewhite');
-        $(this).removeClass('white');
-        $(".marketstreet").removeClass('reveal');
         $("#follower").removeClass('color3');
   
         
@@ -476,21 +502,16 @@ $(document).ready(function(){
         // hover in
 
         $(".container2").addClass('piano');
-        $("time").addClass('white');
-        $(".line").addClass('linewhite');
-        $(this).addClass('white');
         $(".piano").addClass('reveal');
         $("#follower").addClass('color4');
         
 
       },
       function(){
+        $(".container2").removeClass('reveal');
         $(".container2").removeClass('piano');
-        $("time").removeClass('white');
-        $(".line").removeClass('linewhite');
-        $(this).removeClass('white');
-        $(".piano").removeClass('reveal');
         $("#follower").removeClass('color4');
+        $(".nophotos") .removeClass('reveal');
   
         
         // hover out
@@ -501,19 +522,16 @@ $(document).ready(function(){
         function(){
         // hover in
 
-        $(".container2").addClass('pier39');
-        $(this).addClass('white');
-        $(".pier39").addClass('reveal');
+        $(".container2").addClass('stanley');
+        $(".stanley").addClass('reveal');
         $(".line").addClass('linewhite');
         $("#follower").addClass('color5');
 
         
       },
       function(){
-        $(".container2").removeClass('pier39');
-        $(this).removeClass('white');
-        $(".pier39").removeClass('reveal');
-        $(".line").removeClass('linewhite');
+        $(".container2").removeClass('stanley');
+        $(".container2").removeClass('reveal');
         $("#follower").removeClass('color5');
         
         // hover out
@@ -525,20 +543,14 @@ $(".n4pm").hover(
         // hover in
 
         $(".container2").addClass('marketstreet');
-        $("time").addClass('white');
-        $(".line").addClass('linewhite');
-        $(this).addClass('white');
         $(".marketstreet").addClass('reveal');
         $("#follower").addClass('color6');
         
 
       },
       function(){
+        $(".container2").removeClass('reveal');
         $(".container2").removeClass('marketstreet');
-        $("time").removeClass('white');
-        $(".line").removeClass('linewhite');
-        $(this).removeClass('white');
-        $(".marketstreet").removeClass('reveal');
         $("#follower").removeClass('color6');
   
         
@@ -550,21 +562,15 @@ $(".n4pm").hover(
         function(){
         // hover in
 
-        $(".container2").addClass('marketstreet');
-        $("time").addClass('white');
-        $(".line").addClass('linewhite');
-        $(this).addClass('white');
-        $(".marketstreet").addClass('reveal');
+        $(".container2").addClass('pier39');
+        $(".pier39").addClass('reveal');
         $("#follower").addClass('color7');
         
 
       },
       function(){
-        $(".container2").removeClass('marketstreet');
-        $("time").removeClass('white');
-        $(".line").removeClass('linewhite');
-        $(this).removeClass('white');
-        $(".marketstreet").removeClass('reveal');
+        $(".container2").removeClass('reveal');
+        $(".container2").removeClass('pier39');
         $("#follower").removeClass('color7');
   
         
@@ -577,20 +583,14 @@ $(".n4pm").hover(
         // hover in
 
         $(".container2").addClass('light');
-        $("time").addClass('white');
-        $(".line").addClass('linewhite');
-        $(this).addClass('white');
         $(".light").addClass('reveal');
         $("#follower").addClass('color8');
         
 
       },
       function(){
+        $(".container2").removeClass('reveal');
         $(".container2").removeClass('light');
-        $("time").removeClass('white');
-        $(".line").removeClass('linewhite');
-        $(this).removeClass('white');
-        $(".light").removeClass('reveal');
         $("#follower").removeClass('color8');
   
         
@@ -602,21 +602,15 @@ $(".n4pm").hover(
         function(){
         // hover in
 
-        $(".container2").addClass('marketstreet');
-        $("time").addClass('white');
-        $(".line").addClass('linewhite');
-        $(this).addClass('white');
-        $(".marketstreet").addClass('reveal');
+        $(".container2").addClass('night');
+        $(".night").addClass('reveal');
         $("#follower").addClass('color9');
         
 
       },
       function(){
-        $(".container2").removeClass('marketstreet');
-        $("time").removeClass('white');
-        $(".line").removeClass('linewhite');
-        $(this).removeClass('white');
-        $(".marketstreet").removeClass('reveal');
+        $(".container2").removeClass('night');
+        $(".container2").removeClass('reveal');
         $("#follower").removeClass('color9');
   
         
@@ -628,29 +622,31 @@ $(".n4pm").hover(
         function(){
         // hover in
 
-        $(".container2").addClass('marketstreet');
-        $("time").addClass('white');
-        $(".line").addClass('linewhite');
-        $(this).addClass('white');
-        $(".marketstreet").addClass('reveal');
+        $(".container2").addClass('beat');
+        $(".beat").addClass('reveal');
         $("#follower").addClass('color10');
         
 
       },
       function(){
-        $(".container2").removeClass('marketstreet');
-        $("time").removeClass('white');
-        $(".line").removeClass('linewhite');
-        $(this).removeClass('white');
-        $(".marketstreet").removeClass('reveal');
+        $(".container2").removeClass('reveal');
+        $(".container2").removeClass('beat');
         $("#follower").removeClass('color10');
   
         
         // hover out
       });
 
- 
+  $(".n1pm").click(
 
+        function(){
+
+         $(".nophotos").addClass('reveal');
+       
+      });
+
+ 
+  
   
 });
 
@@ -659,7 +655,8 @@ $(".n4pm").hover(
 
 
 <body>
-<div class="container2">
+<div class="container3">
+<div class="container2"></div>
 
 
 <div class="centerdiv">
@@ -668,10 +665,10 @@ $(".n4pm").hover(
 </div></div>
 <div class="line">
 </div>
+<div class="nophotos">NO MORE PHOTOS</div>
 
 
-
-
+<div class="map"><div class="dot"></div></div>
 
 
 <div class="time n8am">8AM</div>
@@ -684,7 +681,7 @@ $(".n4pm").hover(
 <div class="time n8pm">8PM</div>
 <div class="time n10pm">10PM</div>
 <div class="time n0am">0AM</div>
-<div class="map"><div class="dot"></div></div>
+
 
 </div>
 
