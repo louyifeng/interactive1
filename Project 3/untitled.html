@@ -84,13 +84,14 @@
 
   
   .time{
+    position: absolute;
     float: left;
-    top: 42%;
     font-size: 1em;
+    padding-top: 47%;
+    height: 100%;
   }
   .n8am{
     left: 2%;
-    position: absolute;
     transition: 0.2s;
     height: 80%;
     width: 10%;
@@ -108,9 +109,7 @@
 
   .n10am{
     left: 12%;
-    position: absolute;
     transition: 0.2s;
-    height: 80%;
     width: 10%;
     color: white;
     opacity: 0.7;
@@ -125,9 +124,7 @@
 
   .n12pm{
     left: 22%;
-    position: absolute;
     transition: 0.2s;
-    height: 80%;
     width: 10%;
     color: white;
     opacity: 0.7;
@@ -142,9 +139,7 @@
 
   .n1pm{
     left: 32%;
-    position: absolute;
     transition: 0.2s;
-    height: 80%;
     width: 10%;
     color: white;
     opacity: 0.7;
@@ -160,9 +155,7 @@
 
   .n3pm{
     left: 42%;
-    position: absolute;
     transition: 0.2s;
-    height: 80%;
     width: 10%;
     color: white;
     opacity: 0.7;
@@ -177,9 +170,7 @@
 
   .n4pm{
     left: 52%;
-    position: absolute;
     transition: 0.2s;
-    height: 80%;
     width: 10%;
     color: white;
     opacity: 0.7;
@@ -189,13 +180,12 @@
     transform: scale(1.9);
     padding-left: -35px;
     opacity: 0.9;
+    cursor: pointer;
   }
 
   .n6pm{
     left: 62%;
-    position: absolute;
     transition: 0.2s;
-    height: 80%;
     width: 10%;
     color: white;
     opacity: 0.7;
@@ -209,9 +199,7 @@
 
   .n8pm{
     left: 72%;
-    position: absolute;
     transition: 0.2s;
-    height: 80%;
     width: 10%;
     color: white;
     opacity: 0.7;
@@ -225,9 +213,7 @@
 
   .n10pm{
     left: 82%;
-    position: absolute;
     transition: 0.2s;
-    height: 80%;
     width: 10%;
     color: white;
     opacity: 0.7;
@@ -243,9 +229,7 @@
 
   .n0am{
     left: 92%;
-    position: absolute;
     transition: 0.2s;
-    height: 80%;
     width: 10%;
     color: white;
     opacity: 0.7;
@@ -324,6 +308,10 @@
 
   .stanley{
     background-image: url(stanley.jpg);
+  }
+  
+  .chinatown{
+    background-image: url(chinatown.jpg);
   }
 
   .reveal{
@@ -542,16 +530,17 @@ $(".n4pm").hover(
         function(){
         // hover in
 
-        $(".container2").addClass('marketstreet');
-        $(".marketstreet").addClass('reveal');
+        $(".container2").addClass('chinatown');
+        $(".chinatown").addClass('reveal');
         $("#follower").addClass('color6');
         
 
       },
       function(){
         $(".container2").removeClass('reveal');
-        $(".container2").removeClass('marketstreet');
+        $(".container2").removeClass('chinatown');
         $("#follower").removeClass('color6');
+        $(".nophotos") .removeClass('reveal');
   
         
         // hover out
@@ -645,6 +634,14 @@ $(".n4pm").hover(
        
       });
 
+  $(".n4pm").click(
+
+        function(){
+
+         $(".nophotos").addClass('reveal');
+       
+      });
+
  
   
   
@@ -663,14 +660,14 @@ $(".n4pm").hover(
 <div class="container">
 <div id="follower"></div>
 </div></div>
-<div class="line">
-</div>
+
 <div class="nophotos">NO MORE PHOTOS</div>
 
 
 <div class="map"><div class="dot"></div></div>
 
-
+<div class="line">
+</div>
 <div class="time n8am">8AM</div>
 <div class="time n10am">10AM</div>
 <div class="time n12pm">12PM</div>
