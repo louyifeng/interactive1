@@ -18,6 +18,50 @@
     background-color: black;
   }
 
+  .date{
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    opacity: 0.8;
+  }
+
+  .arrowleft{
+    position: absolute;
+    top: 10%;
+    font-size:4em;
+    left: 4%;
+    opacity: 0.8;
+    color: white;
+    transition: 0.2s;
+  }
+
+  .arrowleft:hover{
+    
+    transform: scale(1.9);
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  .arrowright{
+    position: absolute;
+    top: 10%;
+    font-size:4em;
+    right: 4%;
+    opacity: 0.8;
+    color: white;
+    transition: 0.2s;
+  }
+
+  .arrowright:hover{
+    
+    transform: scale(1.9);
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
   .container2{
     overflow: hidden;
     width: 100%;
@@ -86,9 +130,9 @@
   .time{
     position: absolute;
     float: left;
-    font-size: 1em;
-    padding-top: 47%;
-    height: 100%;
+    font-size: 1.2em;
+    top: 43%;
+    height: 40%;
   }
   .n8am{
     left: 2%;
@@ -320,6 +364,7 @@
 
   .disappear{
     animation: disappear 0.5s;
+    animation-fill-mode: forwards;
 
   }
 
@@ -373,6 +418,10 @@
     width: 100%;
     text-align: center;
     top: 25%;
+    opacity: 0;
+  }
+
+  .opacity{
     opacity: 0;
   }
 
@@ -431,6 +480,10 @@ $(document).ready(function(){
         $(".container2").addClass('morning');
         $(".morning").addClass('reveal');
         $("#follower").addClass('color1');
+        $(".date").addClass('opacity');
+        $(".date").removeClass('reveal');
+        $(".arrow").addClass('opacity');
+        $(".arrow").removeClass('reveal');
         
 
       },
@@ -439,6 +492,8 @@ $(document).ready(function(){
         $(".container2").removeClass('morning');
         $("#follower").removeClass('color1');
         $(".container2").addClass('disappear');
+        $(".arrow").addClass('reveal');
+        $(".date").addClass('reveal');
   
         
         // hover out
@@ -452,6 +507,10 @@ $(document).ready(function(){
         $(".container2").addClass('janice');
         $(".janice").addClass('reveal');
         $("#follower").addClass('color2');
+        $(".date").addClass('opacity');
+        $(".date").removeClass('reveal');
+        $(".arrow").addClass('opacity');
+        $(".arrow").removeClass('reveal');
         
 
       },
@@ -460,6 +519,8 @@ $(document).ready(function(){
         $(".container2").removeClass('janice');
         $("#follower").removeClass('color2');
         $(".container2").addClass('disappear');
+        $(".arrow").addClass('reveal');
+        $(".date").addClass('reveal');
   
         
         // hover out
@@ -473,7 +534,10 @@ $(document).ready(function(){
         $(".container2").addClass('marketstreet');
         $(".marketstreet").addClass('reveal');
         $("#follower").addClass('color3');
-        
+        $(".date").addClass('opacity');
+        $(".date").removeClass('reveal');
+        $(".arrow").addClass('opacity');
+        $(".arrow").removeClass('reveal');
 
       },
       function(){
@@ -481,6 +545,8 @@ $(document).ready(function(){
         $(".container2").removeClass('marketstreet');
         $("#follower").removeClass('color3');
         $(".container2").addClass('disappear');
+        $(".arrow").addClass('reveal');
+        $(".date").addClass('reveal');
   
         
         // hover out
@@ -494,7 +560,10 @@ $(document).ready(function(){
         $(".container2").addClass('piano');
         $(".piano").addClass('reveal');
         $("#follower").addClass('color4');
-        
+        $(".date").addClass('opacity');
+        $(".date").removeClass('reveal');
+        $(".arrow").addClass('opacity');
+        $(".arrow").removeClass('reveal');
 
       },
       function(){
@@ -503,6 +572,8 @@ $(document).ready(function(){
         $("#follower").removeClass('color4');
         $(".nophotos") .removeClass('reveal');
         $(".container2").addClass('disappear');
+        $(".arrow").addClass('reveal');
+        $(".date").addClass('reveal');
         
         
         // hover out
@@ -517,6 +588,10 @@ $(document).ready(function(){
         $(".stanley").addClass('reveal');
         $(".line").addClass('linewhite');
         $("#follower").addClass('color5');
+        $(".date").addClass('opacity');
+        $(".date").removeClass('reveal');
+        $(".arrow").addClass('opacity');
+        $(".arrow").removeClass('reveal');
 
         
       },
@@ -525,6 +600,8 @@ $(document).ready(function(){
         $(".container2").removeClass('reveal');
         $("#follower").removeClass('color5');
         $(".container2").addClass('disappear');
+        $(".arrow").addClass('reveal');
+        $(".date").addClass('reveal');
         
         // hover out
       });
@@ -537,6 +614,10 @@ $(".n4pm").hover(
         $(".container2").addClass('chinatown');
         $(".chinatown").addClass('reveal');
         $("#follower").addClass('color6');
+        $(".date").addClass('opacity');
+        $(".date").removeClass('reveal');
+        $(".arrow").addClass('opacity');
+        $(".arrow").removeClass('reveal');
         
 
       },
@@ -546,6 +627,8 @@ $(".n4pm").hover(
         $("#follower").removeClass('color6');
         $(".nophotos") .removeClass('reveal');
         $(".container2").addClass('disappear');
+        $(".arrow").addClass('reveal');
+        $(".date").addClass('reveal');
   
         
         // hover out
@@ -559,6 +642,10 @@ $(".n4pm").hover(
         $(".container2").addClass('pier39');
         $(".pier39").addClass('reveal');
         $("#follower").addClass('color7');
+        $(".date").addClass('opacity');
+        $(".date").removeClass('reveal');
+        $(".arrow").addClass('opacity');
+        $(".arrow").removeClass('reveal');
         
 
       },
@@ -567,6 +654,8 @@ $(".n4pm").hover(
         $(".container2").removeClass('pier39');
         $("#follower").removeClass('color7');
         $(".container2").addClass('disappear');
+        $(".arrow").addClass('reveal');
+        $(".date").addClass('reveal');
   
         
         // hover out
@@ -580,6 +669,10 @@ $(".n4pm").hover(
         $(".container2").addClass('light');
         $(".light").addClass('reveal');
         $("#follower").addClass('color8');
+        $(".date").addClass('opacity');
+        $(".date").removeClass('reveal');
+        $(".arrow").addClass('opacity');
+        $(".arrow").removeClass('reveal');
         
 
       },
@@ -588,6 +681,8 @@ $(".n4pm").hover(
         $(".container2").removeClass('light');
         $("#follower").removeClass('color8');
         $(".container2").addClass('disappear');
+        $(".arrow").addClass('reveal');
+        $(".date").addClass('reveal');
   
         
         // hover out
@@ -601,6 +696,10 @@ $(".n4pm").hover(
         $(".container2").addClass('night');
         $(".night").addClass('reveal');
         $("#follower").addClass('color9');
+        $(".date").addClass('opacity');
+        $(".date").removeClass('reveal');
+        $(".arrow").addClass('opacity');
+        $(".arrow").removeClass('reveal');
         
 
       },
@@ -609,6 +708,8 @@ $(".n4pm").hover(
         $(".container2").removeClass('reveal');
         $("#follower").removeClass('color9');
         $(".container2").addClass('disappear');
+        $(".arrow").addClass('reveal');
+        $(".date").addClass('reveal');
   
         
         // hover out
@@ -622,6 +723,11 @@ $(".n4pm").hover(
         $(".container2").addClass('beat');
         $(".beat").addClass('reveal');
         $("#follower").addClass('color10');
+        $(".date").addClass('opacity');
+        $(".date").removeClass('reveal');
+        $(".arrow").addClass('opacity');
+        $(".arrow").removeClass('reveal');
+
         
 
       },
@@ -630,6 +736,9 @@ $(".n4pm").hover(
         $(".container2").removeClass('beat');
         $("#follower").removeClass('color10');
         $(".container2").addClass('disappear');
+        $(".arrow").addClass('reveal');
+        $(".date").addClass('reveal');
+
   
         
         // hover out
@@ -687,8 +796,9 @@ $(".n4pm").hover(
 <div class="time n8pm">8PM</div>
 <div class="time n10pm">10PM</div>
 <div class="time n0am">0AM</div>
-
-
+<div class="date">OCTOBER 8, 2016</div>
+<div class="arrow arrowleft"><</div>
+<div class="arrow arrowright">></div>
 </div>
 
 
