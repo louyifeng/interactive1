@@ -28,6 +28,66 @@
     opacity: 0.8;
   }
 
+  .nophotos{
+    position: absolute;
+    top: 21%;
+    color: white;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+  }
+
+  .gearystreet{
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+  }
+  
+  .fraenkel{
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+  }
+
+  .market{
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+  }
+
+  .mission{
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+  }
+
+  .jewish{
+    position: absolute;
+    top: 3%;
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+  }
+
   .arrowleft{
     position: absolute;
     top: 10%;
@@ -192,7 +252,6 @@
     transform: scale(1.9);
     padding-left: 35px;
     opacity: 0.9;
-    cursor: pointer;
   }
 
 
@@ -223,7 +282,6 @@
     transform: scale(1.9);
     padding-left: -35px;
     opacity: 0.9;
-    cursor: pointer;
   }
 
   .n6pm{
@@ -411,15 +469,7 @@
     background-size: cover;
   }
 
-  .nophotos{
-    position: absolute;
-    font-size: 2em;
-    color: white;
-    width: 100%;
-    text-align: center;
-    top: 25%;
-    opacity: 0;
-  }
+  
 
   .opacity{
     opacity: 0;
@@ -484,6 +534,9 @@ $(document).ready(function(){
         $(".date").removeClass('reveal');
         $(".arrow").addClass('opacity');
         $(".arrow").removeClass('reveal');
+        $(".gearystreet").removeClass('disappear');
+        $(".gearystreet").addClass('reveal');
+
         
 
       },
@@ -494,7 +547,8 @@ $(document).ready(function(){
         $(".container2").addClass('disappear');
         $(".arrow").addClass('reveal');
         $(".date").addClass('reveal');
-  
+        $(".gearystreet").removeClass('reveal');
+        $(".gearystreet").addClass('disappear');
         
         // hover out
       });
@@ -511,6 +565,8 @@ $(document).ready(function(){
         $(".date").removeClass('reveal');
         $(".arrow").addClass('opacity');
         $(".arrow").removeClass('reveal');
+        $(".fraenkel").removeClass('disappear');
+        $(".fraenkel").addClass('reveal');
         
 
       },
@@ -521,6 +577,8 @@ $(document).ready(function(){
         $(".container2").addClass('disappear');
         $(".arrow").addClass('reveal');
         $(".date").addClass('reveal');
+        $(".fraenkel").removeClass('reveal');
+        $(".fraenkel").addClass('disappear');
   
         
         // hover out
@@ -538,6 +596,8 @@ $(document).ready(function(){
         $(".date").removeClass('reveal');
         $(".arrow").addClass('opacity');
         $(".arrow").removeClass('reveal');
+         $(".market").removeClass('disappear');
+        $(".market").addClass('reveal');
 
       },
       function(){
@@ -547,6 +607,9 @@ $(document).ready(function(){
         $(".container2").addClass('disappear');
         $(".arrow").addClass('reveal');
         $(".date").addClass('reveal');
+        $(".market").removeClass('reveal');
+        $(".market").addClass('disappear');
+  
   
         
         // hover out
@@ -564,6 +627,10 @@ $(document).ready(function(){
         $(".date").removeClass('reveal');
         $(".arrow").addClass('opacity');
         $(".arrow").removeClass('reveal');
+        $(".nophotos").removeClass('disappear');
+        $(".nophotos").addClass('reveal');
+        $(".mission").removeClass('disappear');
+        $(".mission").addClass('reveal');
 
       },
       function(){
@@ -574,6 +641,10 @@ $(document).ready(function(){
         $(".container2").addClass('disappear');
         $(".arrow").addClass('reveal');
         $(".date").addClass('reveal');
+        $(".nophotos").removeClass('reveal');
+        $(".nophotos").addClass('disappear');
+        $(".mission").removeClass('reveal');
+        $(".mission").addClass('disappear');
         
         
         // hover out
@@ -592,6 +663,8 @@ $(document).ready(function(){
         $(".date").removeClass('reveal');
         $(".arrow").addClass('opacity');
         $(".arrow").removeClass('reveal');
+        $(".jewish").removeClass('disappear');
+        $(".jewish").addClass('reveal');
 
         
       },
@@ -602,7 +675,8 @@ $(document).ready(function(){
         $(".container2").addClass('disappear');
         $(".arrow").addClass('reveal');
         $(".date").addClass('reveal');
-        
+        $(".jewish").removeClass('reveal');
+        $(".jewish").addClass('disappear');
         // hover out
       });
 
@@ -744,15 +818,9 @@ $(".n4pm").hover(
         // hover out
       });
 
-  $(".n1pm").click(
 
-        function(){
 
-         $(".nophotos").addClass('reveal');
-       
-      });
-
-  $(".n4pm").click(
+  $(".n4pm").hover(
 
         function(){
 
@@ -799,6 +867,13 @@ $(".n4pm").hover(
 <div class="date">OCTOBER 8, 2016</div>
 <div class="arrow arrowleft"><</div>
 <div class="arrow arrowright">></div>
+<div class="gearystreet">GEARY STREET</div>
+<div class="fraenkel">FRAENKEL GALLERY</div>
+<div class="market">MARKET STREET</div>
+<div class="mission">MISSIONSTREET</div>
+<div class="jewish">CONTEMPORARY JEWISH MUSEUM</div>
+
+
 </div>
 
 
