@@ -5,6 +5,7 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
   <title>
@@ -26,6 +27,7 @@
     width: 100%;
     text-align: center;
     opacity: 0.8;
+    transition: 0.8s;
   }
 
   .nophotos{
@@ -80,7 +82,57 @@
 
   .jewish{
     position: absolute;
-    top: 3%;
+    top: 4%;
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+  }
+
+.potrero{
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+  }
+
+.china{
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+  }
+
+  .sleep{
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+  }
+
+  .pier{
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 4em;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+  }
+
+  .pier1{
+    position: absolute;
+    top: 10%;
     color: white;
     font-size: 4em;
     width: 100%;
@@ -96,6 +148,7 @@
     opacity: 0.8;
     color: white;
     transition: 0.2s;
+    z-index: 1000;
   }
 
   .arrowleft:hover{
@@ -113,6 +166,7 @@
     opacity: 0.8;
     color: white;
     transition: 0.2s;
+    z-index: 1000;
   }
 
   .arrowright:hover{
@@ -164,7 +218,7 @@
 }
 
 .centerdiv {
-    top: 36%;
+    top: 38%;
     width:100%;
     position:absolute;
 }
@@ -190,7 +244,7 @@
   .time{
     position: absolute;
     float: left;
-    font-size: 1.2em;
+    font-size: 1.76em;
     top: 43%;
     height: 40%;
   }
@@ -204,9 +258,10 @@
   }
 
   .n8am:hover{
-    transform: scale(1.9);
-    padding-left: 35px;
+    font-size: 2.5em;
+    top: 25%;
     opacity: 0.9;
+    cursor: pointer;
     
   }
 
@@ -219,9 +274,10 @@
   }
 
   .n10am:hover{
-    transform: scale(1.9);
-    padding-left: 35px;
+    font-size: 2.5em;
+    top: 25%;
     opacity: 0.9;
+    cursor: pointer;
   }
 
 
@@ -234,9 +290,10 @@
   }
 
   .n12pm:hover{
-    transform: scale(1.9);
-    padding-left: 35px;
+    font-size: 2.5em;
+    top: 25%;
     opacity: 0.9;
+    cursor: pointer;
   }
 
 
@@ -249,9 +306,10 @@
   }
 
   .n1pm:hover{
-    transform: scale(1.9);
-    padding-left: 35px;
+    font-size: 2.5em;
+    top: 25%;
     opacity: 0.9;
+    cursor: pointer;
   }
 
 
@@ -264,9 +322,10 @@
   }
 
   .n3pm:hover{
-    transform: scale(1.9);
-    padding-left: 35px;
+    font-size: 2.5em;
+    top: 25%;
     opacity: 0.9;
+    cursor: pointer;
   }
 
 
@@ -279,9 +338,10 @@
   }
 
   .n4pm:hover{
-    transform: scale(1.9);
-    padding-left: -35px;
+    font-size: 2.5em;
+    top: 25%;
     opacity: 0.9;
+    cursor: pointer;
   }
 
   .n6pm{
@@ -293,9 +353,10 @@
   }
 
   .n6pm:hover{
-    transform: scale(1.9);
-    padding-left: -35px;
+    font-size: 2.5em;
+    top: 25%;
     opacity: 0.9;
+    cursor: pointer;
   }
 
   .n8pm{
@@ -307,9 +368,10 @@
   }
 
   .n8pm:hover{
-    transform: scale(1.9);
-    padding-left: -35px;
+    font-size: 2.5em;
+    top: 25%;
     opacity: 0.9;
+    cursor: pointer;
   }
 
   .n10pm{
@@ -321,9 +383,11 @@
   }
 
   .n10pm:hover{
-    transform: scale(1.9);
-    padding-left: -35px;
+    font-size: 2.5em;
+    top: 25%;
     opacity: 0.9;
+    cursor: pointer;
+    text-align: right;
 
   }
 
@@ -337,33 +401,149 @@
   }
 
   .n0am:hover{
-    transform: scale(1.9);
-    padding-left: -35px;
+    font-size: 2.5em;
+    top: 25%;
     opacity: 0.9;
+    cursor: pointer;
   }
 
   .map{
-    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
     top: 60%;
     background-image: url('map copy.png');
     background-size: cover;
-    width: 80%;
-    left: 15%;
-    height: 50%;
+    width: 600px;
+    height: 300px;
     opacity: 0.8;
   }
 
-  .dot{
-     height: 20px;
-     width: 20px;
-     border-radius: 50%;
-     background-color: #C31010;
-     position: relative;
-     top: 40%;
-     left: 30%;
-     animation:aaa 0.5s infinite;
-     -webkit-animation-direction:alternate;
+  .tri{
+     background-image: url(tri.png);
+     background-size: cover;
+     height: 25px;
+     width: 25px;
+     position: absolute;
+     animation-direction: alternate;
+     opacity: 0;
   }
+
+  .n8amtri{
+     left: 450px;
+     animation: n8n 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n10amtri{
+     left: 425px;
+     animation: n10n 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n12pmtri{
+     left: 475px;
+     animation: n12n 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n1pmtri{
+     left: 485px;
+     animation: n1pm 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n3pmtri{
+     left: 450px;
+     animation: n3pm 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n4pmtri{
+     left: 450px;
+     animation: n4pm 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n6pmtri{
+     left: 530px;
+     animation: n6pm 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n8pmtri{
+     left: 460px;
+     animation: n8pm 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n10pmtri{
+     left: 510px;
+     animation: n10pm 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+  
+
+  .n0amtri{
+     left: 510px;
+     animation: n0am 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  @keyframes n8n{
+  from{top: 145px;opacity: 0}
+  to{top: 135px;opacity: 1}
+ }
+
+  @keyframes n10n{
+  from{top: 145px;opacity: 0}
+  to{top: 135px;opacity: 1}
+ }
+
+  @keyframes n12n{
+  from{top: 127px;opacity: 0}
+  to{top: 117px;opacity: 1}
+ }
+
+  @keyframes n1pm{
+  from{top: 137px;opacity: 0}
+  to{top: 127px;opacity: 1}
+ }
+
+  @keyframes n3pm{
+  from{top: 167px;opacity: 0}
+  to{top: 157px;opacity: 1}
+ }
+
+  @keyframes n3pm{
+  from{top: 167px;opacity: 0}
+  to{top: 157px;opacity: 1}
+ }
+
+  @keyframes n4pm{
+  from{top: 47px;opacity: 0}
+  to{top: 37px;opacity: 1}
+ }
+
+  @keyframes n6pm{
+  from{top: 67px;opacity: 0}
+  to{top: 57px;opacity: 1}
+ }
+
+  @keyframes n8pm{
+  from{top: -10px;opacity: 0}
+  to{top: -20px;opacity: 1}
+ }
+
+  @keyframes n10pm{
+  from{bottom: 45px;opacity: 0}
+  to{bottom: 55px;opacity: 1}
+ }
+
+  @keyframes n0am{
+  from{bottom: 45px;opacity: 0}
+  to{bottom: 55px;opacity: 1}
+ }
 
  @keyframes aaa{
   from{opacity: 0;}
@@ -487,6 +667,259 @@
     to{opacity: 0}
   }
 
+ 
+  @media screen and (max-width: 900px) {
+   .date{
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    opacity: 0.8;
+    }
+
+   .arrowleft{
+    position: absolute;
+    top: 10%;
+    font-size:3em;
+    left: 4%;
+    opacity: 0.8;
+    color: white;
+    transition: 0.2s;
+    z-index: 1000;
+    transition: 0.2s;
+    }
+
+    .arrowright{
+    position: absolute;
+    top: 10%;
+    font-size:3em;
+    right: 4%;
+    opacity: 0.8;
+    color: white;
+    transition: 0.2s;
+    z-index: 1000;
+    transition: 0.2s;
+    }
+    
+    .time{
+    position: absolute;
+    float: left;
+    font-size: 1.2em;
+    top: 43%;
+    height: 40%;
+    }
+
+    .opacity{
+    opacity: 0;
+    }
+
+    .name{
+      font-size:3em;
+    }
+    
+    .jewish{
+    top:6%;
+   }
+
+    .map{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 60%;
+    background-image: url('map copy.png');
+    background-size: cover;
+    width: 600px;
+    height: 300px;
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+
+  @media screen and (max-width: 550px) {
+    .date{
+    position: absolute;
+    top: 10%;
+    color: white;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    opacity: 0.8;
+   }
+
+    .arrowleft{
+    position: absolute;
+    top: 10%;
+    font-size:2em;
+    left: 4%;
+    opacity: 0.8;
+    color: white;
+    transition: 0.2s;
+    z-index: 1000;
+    transition: 0.2s;
+    }
+    
+    .arrowright{
+    position: absolute;
+    top: 10%;
+    font-size:2em;
+    right: 4%;
+    opacity: 0.8;
+    color: white;
+    transition: 0.2s;
+    z-index: 1000;
+    transition: 0.2s;
+    }
+
+    .time{
+    position: absolute;
+    float: left;
+    font-size: 0.8em;
+    top: 43%;
+    height: 40%;
+  }
+   
+   .opacity{
+    opacity: 0;
+  }
+
+   .name{
+    font-size:2em;
+   }
+
+   .jewish{
+    top:8%;
+   }
+
+
+   .map{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 60%;
+    background-image: url('map copy.png');
+    background-size: cover;
+    width: 300px;
+    height: 150px;
+    opacity: 0.8;
+    transition: 0.5s;
+  }
+
+  .n8amtri{
+     left: 225px;
+     animation: n8n 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n10amtri{
+     left: 212.5px;
+     animation: n10n 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n12pmtri{
+     left: 272.5px;
+     animation: n12n 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n1pmtri{
+     left: 242.5px;
+     animation: n1pm 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n3pmtri{
+     left: 225px;
+     animation: n3pm 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n4pmtri{
+     left: 225px;
+     animation: n4pm 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n6pmtri{
+     left: 265px;
+     animation: n6pm 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n8pmtri{
+     left: 230px;
+     animation: n8pm 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  .n10pmtri{
+     left: 255px;
+     animation: n10pm 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+  
+
+  .n0amtri{
+     left: 255px;
+     animation: n0am 0.5s infinite;
+    -webkit-animation-direction: alternate;
+  }
+
+  @keyframes n8n{
+  from{top: 72.5px;opacity: 0}
+  to{top: 67.5px;opacity: 1}
+ }
+
+  @keyframes n10n{
+  from{top: 72.5px;opacity: 0}
+  to{top: 67.5px;opacity: 1}
+ }
+
+  @keyframes n12n{
+  from{top: 63.5px;opacity: 0}
+  to{top: 58.5px;opacity: 1}
+ }
+
+  @keyframes n1pm{
+  from{top: 68.5px;opacity: 0}
+  to{top: 63.5px;opacity: 1}
+ }
+
+  @keyframes n3pm{
+  from{top: 83.5px;opacity: 0}
+  to{top: 78.5px;opacity: 1}
+ }
+
+  @keyframes n3pm{
+  from{top: 83.5px;opacity: 0}
+  to{top: 78.5px;opacity: 1}
+ }
+
+  @keyframes n4pm{
+  from{top: 23.5px;opacity: 0}
+  to{top: 18.5px;opacity: 1}
+ }
+
+  @keyframes n6pm{
+  from{top: 33.5px;opacity: 0}
+  to{top: 28.5px;opacity: 1}
+ }
+
+  @keyframes n8pm{
+  from{top: -5px;opacity: 0}
+  to{top: -10px;opacity: 1}
+ }
+
+  @keyframes n10pm{
+  from{bottom: 22.5px;opacity: 0}
+  to{bottom: 27.5px;opacity: 1}
+ }
+
+  @keyframes n0am{
+  from{bottom: 22.5px;opacity: 0}
+  to{bottom: 27.5px;opacity: 1}
+ }
 
  
   </style>
@@ -536,6 +969,7 @@ $(document).ready(function(){
         $(".arrow").removeClass('reveal');
         $(".gearystreet").removeClass('disappear');
         $(".gearystreet").addClass('reveal');
+        $(".tri").addClass('n10amtri');
 
         
 
@@ -549,7 +983,7 @@ $(document).ready(function(){
         $(".date").addClass('reveal');
         $(".gearystreet").removeClass('reveal');
         $(".gearystreet").addClass('disappear');
-        
+        $(".tri").removeClass('n10amtri');
         // hover out
       });
 
@@ -567,7 +1001,7 @@ $(document).ready(function(){
         $(".arrow").removeClass('reveal');
         $(".fraenkel").removeClass('disappear');
         $(".fraenkel").addClass('reveal');
-        
+        $(".tri").addClass('n8amtri');
 
       },
       function(){
@@ -579,7 +1013,7 @@ $(document).ready(function(){
         $(".date").addClass('reveal');
         $(".fraenkel").removeClass('reveal');
         $(".fraenkel").addClass('disappear');
-  
+        $(".tri").removeClass('n8amtri');
         
         // hover out
       });
@@ -596,8 +1030,9 @@ $(document).ready(function(){
         $(".date").removeClass('reveal');
         $(".arrow").addClass('opacity');
         $(".arrow").removeClass('reveal');
-         $(".market").removeClass('disappear');
+        $(".market").removeClass('disappear');
         $(".market").addClass('reveal');
+        $(".tri").addClass('n12pmtri');
 
       },
       function(){
@@ -609,6 +1044,7 @@ $(document).ready(function(){
         $(".date").addClass('reveal');
         $(".market").removeClass('reveal');
         $(".market").addClass('disappear');
+        $(".tri").removeClass('n12pmtri');
   
   
         
@@ -631,6 +1067,7 @@ $(document).ready(function(){
         $(".nophotos").addClass('reveal');
         $(".mission").removeClass('disappear');
         $(".mission").addClass('reveal');
+        $(".tri").addClass('n1pmtri');
 
       },
       function(){
@@ -645,6 +1082,7 @@ $(document).ready(function(){
         $(".nophotos").addClass('disappear');
         $(".mission").removeClass('reveal');
         $(".mission").addClass('disappear');
+        $(".tri").removeClass('n1pmtri');
         
         
         // hover out
@@ -665,7 +1103,7 @@ $(document).ready(function(){
         $(".arrow").removeClass('reveal');
         $(".jewish").removeClass('disappear');
         $(".jewish").addClass('reveal');
-
+        $(".tri").addClass('n3pmtri');
         
       },
       function(){
@@ -677,7 +1115,7 @@ $(document).ready(function(){
         $(".date").addClass('reveal');
         $(".jewish").removeClass('reveal');
         $(".jewish").addClass('disappear');
-        // hover out
+        $(".tri").removeClass('n3pmtri');
       });
 
 $(".n4pm").hover(
@@ -692,18 +1130,21 @@ $(".n4pm").hover(
         $(".date").removeClass('reveal');
         $(".arrow").addClass('opacity');
         $(".arrow").removeClass('reveal');
-        
+        $(".china").removeClass('disappear');
+        $(".china").addClass('reveal');
+        $(".tri").addClass('n4pmtri');
 
       },
       function(){
         $(".container2").removeClass('reveal');
         $(".container2").removeClass('chinatown');
         $("#follower").removeClass('color6');
-        $(".nophotos") .removeClass('reveal');
         $(".container2").addClass('disappear');
         $(".arrow").addClass('reveal');
         $(".date").addClass('reveal');
-  
+        $(".china").removeClass('reveal');
+        $(".china").addClass('disappear');
+        $(".tri").removeClass('n4pmtri');
         
         // hover out
       });
@@ -720,6 +1161,9 @@ $(".n4pm").hover(
         $(".date").removeClass('reveal');
         $(".arrow").addClass('opacity');
         $(".arrow").removeClass('reveal');
+        $(".pier1").removeClass('disappear');
+        $(".pier1").addClass('reveal');
+        $(".tri").addClass('n6pmtri');
         
 
       },
@@ -730,6 +1174,9 @@ $(".n4pm").hover(
         $(".container2").addClass('disappear');
         $(".arrow").addClass('reveal');
         $(".date").addClass('reveal');
+        $(".pier1").removeClass('reveal');
+        $(".pier1").addClass('disappear');
+        $(".tri").removeClass('n6pmtri');
   
         
         // hover out
@@ -747,7 +1194,9 @@ $(".n4pm").hover(
         $(".date").removeClass('reveal');
         $(".arrow").addClass('opacity');
         $(".arrow").removeClass('reveal');
-        
+        $(".pier").removeClass('disappear');
+        $(".pier").addClass('reveal');
+        $(".tri").addClass('n8pmtri');
 
       },
       function(){
@@ -757,7 +1206,9 @@ $(".n4pm").hover(
         $(".container2").addClass('disappear');
         $(".arrow").addClass('reveal');
         $(".date").addClass('reveal');
-  
+        $(".pier").removeClass('reveal');
+        $(".pier").addClass('disappear');
+        $(".tri").removeClass('n8pmtri');
         
         // hover out
       });
@@ -774,8 +1225,9 @@ $(".n4pm").hover(
         $(".date").removeClass('reveal');
         $(".arrow").addClass('opacity');
         $(".arrow").removeClass('reveal');
-        
-
+        $(".potrero").removeClass('disappear');
+        $(".potrero").addClass('reveal');
+        $(".tri").addClass('n10pmtri');
       },
       function(){
         $(".container2").removeClass('night');
@@ -784,9 +1236,9 @@ $(".n4pm").hover(
         $(".container2").addClass('disappear');
         $(".arrow").addClass('reveal');
         $(".date").addClass('reveal');
-  
-        
-        // hover out
+        $(".potrero").removeClass('reveal');
+        $(".potrero").addClass('disappear');
+        $(".tri").removeClass('n10pmtri');
       });
 
   $(".n0am").hover(
@@ -801,7 +1253,9 @@ $(".n4pm").hover(
         $(".date").removeClass('reveal');
         $(".arrow").addClass('opacity');
         $(".arrow").removeClass('reveal');
-
+        $(".sleep").removeClass('disappear');
+        $(".sleep").addClass('reveal');
+        $(".tri").addClass('n0amtri');
         
 
       },
@@ -812,20 +1266,9 @@ $(".n4pm").hover(
         $(".container2").addClass('disappear');
         $(".arrow").addClass('reveal');
         $(".date").addClass('reveal');
-
-  
-        
-        // hover out
-      });
-
-
-
-  $(".n4pm").hover(
-
-        function(){
-
-         $(".nophotos").addClass('reveal');
-       
+        $(".sleep").removeClass('reveal');
+        $(".sleep").addClass('disappear');
+        $(".tri").removeClass('n0amtri');
       });
 
  
@@ -847,10 +1290,14 @@ $(".n4pm").hover(
 <div id="follower"></div>
 </div></div>
 
-<div class="nophotos">NO MORE PHOTOS</div>
+<div class="nophotos"></div>
 
 
-<div class="map"><div class="dot"></div></div>
+<div class="map">
+
+<div class="tri"></div>
+
+</div>
 
 <div class="line">
 </div>
@@ -867,12 +1314,16 @@ $(".n4pm").hover(
 <div class="date">OCTOBER 8, 2016</div>
 <div class="arrow arrowleft"><</div>
 <div class="arrow arrowright">></div>
-<div class="gearystreet">GEARY STREET</div>
-<div class="fraenkel">FRAENKEL GALLERY</div>
-<div class="market">MARKET STREET</div>
-<div class="mission">MISSIONSTREET</div>
-<div class="jewish">CONTEMPORARY JEWISH MUSEUM</div>
-
+<div class="name gearystreet">GEARY STREET</div>
+<div class="name fraenkel">FRAENKEL GALLERY</div>
+<div class="name market">MARKET STREET</div>
+<div class="name mission">MISSION STREET</div>
+<div class="name jewish">CONTEMPORARY <br>JEWISH MUSEUM</div>
+<div class="name china">CHINA TOWN</div>
+<div class="name pier1">PIER 1</div>
+<div class="name pier">PIER 39</div>
+<div class="name potrero">1010 POTRERO</div>
+<div class="name sleep">SLEEP</div>
 
 </div>
 
