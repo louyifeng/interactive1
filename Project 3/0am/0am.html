@@ -7,7 +7,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   <title>
-    8AM
+    0PM
   </title>
   <style>
  
@@ -92,6 +92,30 @@
   font-size: 4em; 
   color: white;
   animation-timing-function: linear;
+
+}
+
+.zz{
+  position: absolute;
+  animation:z 3s infinite;
+  font-size: 4em; 
+  
+  color: white;
+  animation-timing-function: linear;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+
+}
+
+.zzz{
+  position: absolute;
+  animation:z 3s infinite;
+  font-size: 4em; 
+
+  color: white;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-fill-mode: both;
 
 }
 
@@ -339,7 +363,7 @@ $('.previoustime').click(function(e) {
 
 
         function() {
-         window.location = '../1pm/1pm.html';
+         window.location = '../10pm/10pm.html';
     });
 });
 
@@ -370,7 +394,7 @@ $('.nexttime').click(function(e) {
 
 <div id="container">
       <div class="photobanner">
-      <div class="z">Z</div>
+      <div class="z">Z</div><div class="zzz">Z</div><div class="zz">Z</div>
       </div>
      </div>
 
