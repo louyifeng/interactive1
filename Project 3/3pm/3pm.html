@@ -43,9 +43,8 @@
   }
 
   #container {
-  width: 705px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  margin:auto;
 
   background: transparent;
   overflow: hidden;
@@ -54,7 +53,7 @@
  h1{
     color: white;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 3%;
     padding-bottom: 2%;
     font-size: 4em;
     opacity: 1;
@@ -64,9 +63,8 @@
  
 .photobanner {
     height: 300px;
-    width: 100%
-    padding-left:auto;
-    padding-right:auto;
+    width: 3550px;
+    margin:auto;
 
 }
 
@@ -158,20 +156,63 @@ a:visited{
 
 
  
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+
+ 
 .photobanner img {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    margin:auto;
-    position: relative;
-}
-
-.photobanner{
-  position: relative;
-  margin-right: auto;
-   margin-left: auto;
 }
  
 .photobanner img:hover {
@@ -181,8 +222,6 @@ a:visited{
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     cursor: pointer;
-    z-index: 1000;
-
  
     -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
     -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
@@ -334,7 +373,7 @@ $('.previoustime').click(function(e) {
 
 
         function() {
-         window.location = '../12pm/12pm.html';
+         window.location = '../1pm/1pm.html';
     });
 });
 
@@ -347,7 +386,7 @@ $('.nexttime').click(function(e) {
 
 
         function() {
-         window.location = '../3pm/3pm.html';
+         window.location = '../4pm/4pm.html';
     });
 });
 });
@@ -361,20 +400,27 @@ $('.nexttime').click(function(e) {
 <body>
 <div id="container3">
 
-        <h1>MISSION STREET <span style="font-size: 0.5em;">1pm</span><div class="hearts"></div></h1>
+        <h1>CONTEMPORARY <br>JEWISH MUSEUM <span style="font-size: 0.5em;">3pm</span><div class="hearts"></div></h1>
 
 <div id="container">
       <div class="photobanner">
       <br><br>
       <img class="first" src="image-1.jpg" alt="" />
       <img src="image-2.jpg" alt="" />
-      
+      <img src="image-3.jpg" alt="" />
+      <img src="image-4.jpg" alt="" />
+      <img src="image-5.jpg" alt="" />
+      <img src="image-6.jpg" alt="" />
+      <img src="image-1.jpg" alt="" />
+      <img src="image-2.jpg" alt="" />
+      <img src="image-3.jpg" alt="" />
+      <img src="image-4.jpg" alt="" />
       </div>
      </div>
 
   <div class="line">
-  <div class="previoustime"><a href="../12pm/12pm.html">< 12PM </a></div>
-<div class="nexttime"><a href="../3pm/3pm.html">3PM ></a></div>
+  <div class="previoustime"><a href="../1pm/1pm.html">< 1PM </a></div>
+<div class="nexttime"><a href="../4pm/4pm.html">4PM ></a></div>
 
 </div>
 <div class="like">
