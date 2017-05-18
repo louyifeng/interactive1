@@ -17,6 +17,7 @@
    animation-fill-mode: forwards;
 
 }
+#wrapper { width: 960px; margin: 0 auto; padding: 48px 0 72px; }
 
 .title{
    
