@@ -1,3 +1,82 @@
+.stage{
+   margin:0;
+   width: 100%;
+   height: 100%;
+}
+
+.curtaintop{
+   width: 100%;
+   background-color: #f4f4f4;
+   position:fixed;
+   height: 47%;
+   top: 0;
+    animation:curtaintop 1s;
+   animation-delay:5s; 
+   animation-fill-mode: forwards;
+}
+
+.curtainbottom{
+   width: 100%;
+   background-color: #f4f4f4;
+   position:fixed;
+   height: 53%;
+   bottom: 0;
+    animation:curtainbottom 1s;
+   animation-delay:5s; 
+   animation-fill-mode: forwards;
+}
+
+
+.section{
+   margin-bottom:5px;
+   width: 24.75%;
+   background-color: grey;
+   height: 250px;
+   float: left;
+   background-size: cover;
+   background-position: center center;
+}
+
+.first{
+   width: 100%;
+   height: 700px;
+   background-image: url(images/work.jpg);
+   background-size: cover;
+   background-position: center bottom;
+   text-align: center;
+   color: white;
+}
+
+.first p{
+   position: absolute;
+   width: 100%;
+   font-weight: 300;
+   top: 8%;
+   font-size: 2em;
+   line-height: 1.3em;
+}
+
+.second{
+   background-image: url(images/book.jpg);
+   margin-right: 0.33%;
+   
+
+}
+
+.third{
+    background-image: url(images/poster.jpg);
+   margin-right: 0.33%;
+}
+
+.fourth{
+    margin-right: 0.33%;
+}
+
+.fifth{
+   margin-right: 0;
+}
+
+
 .intro{
    
    width: 200px;
@@ -5,15 +84,14 @@
 /*   padding: 10px;*/
    border-style: solid;
    border-width: 3px;
-   border-color: black;
+   border-color: #111111;
    background-color: white;
    color: white;
    top: calc(50% - 40px);
    left: calc(50% - 100px);
-   position: absolute;
+   position: fixed;
    animation:expand 2s;
    animation-delay:4s; 
-
    animation-fill-mode: forwards;
 
 }
@@ -26,11 +104,11 @@
    border-style: solid;
    border-width: 3px;
    border-color: black;
-   background-color: black;
+   background-color: #111111;
    color: white;
    bottom: calc(50% + 4px);
    left: 0;
-   position: absolute;
+   position: fixed;
    animation:expand2 1s;
    animation-delay:5s; 
    opacity: 0;
@@ -51,7 +129,7 @@
    color: white;
    top: calc(50% - 37px);
    left: calc(50% - 95px);
-   position: absolute;
+   position: fixed;
    text-align: center;
    line-height: 30px;
    letter-spacing: 1.8px;
@@ -69,7 +147,7 @@
    color: white;
    top: 7px;
    right: 15%;
-   position: absolute;
+   position: fixed;
    text-align: center;
    line-height: 30px;
    letter-spacing: 1.8px;
@@ -86,7 +164,7 @@
 .loading{
 	animation:loading 4s;
 	height: 100%;
-	background-color: black;
+	background-color: #111111;
 	animation-fill-mode: forwards;
 	left: 0;
 	margin:0;
@@ -126,6 +204,18 @@
    100%{opacity: 1;}
 }
 
+@keyframes curtaintop{
+   0%{top:0;}
+  
+   100%{top:-47%;}
+}
+
+@keyframes curtainbottom{
+   0%{bottom:0;}
+  
+   100%{bottom:-53%;}
+}
+
 
 
 body {
@@ -133,4 +223,13 @@ body {
 	font-family: "proxima-nova";
    margin:0;
    background-color: #f4f4f4;
+}
+a{
+   text-decoration: none;
+   color: white;
+   transition: 0.25s;
+}
+
+a:hover{
+   color: #cccccc;
 }

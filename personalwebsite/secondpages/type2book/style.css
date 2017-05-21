@@ -1,0 +1,168 @@
+.stage{
+   margin:0;
+   width: 100%;
+   height: 100%;
+}
+
+
+.section{
+   margin-bottom:5px;
+   width: 24.75%;
+   background-color: grey;
+   height: 250px;
+   float: left;
+   background-size: cover;
+   background-position: center center;
+}
+
+.first{
+   width: 100%;
+   height: 100vh;
+   background-image: url(images/duilian.jpg);
+   background-size: cover;
+   background-position: center center;
+   text-align: center;
+   color: white;
+}
+
+.first p{
+   position: absolute;
+   width: 100%;
+   font-weight: 300;
+   top: 8%;
+   font-size: 2em;
+   line-height: 1.3em;
+}
+
+.second{
+   background-image: url(images/book.jpg);
+   margin-right: 0.33%;
+   
+
+}
+
+.third{
+    background-image: url(images/poster.jpg);
+   margin-right: 0.33%;
+}
+
+.fourth{
+    margin-right: 0.33%;
+}
+
+.fifth{
+   margin-right: 0;
+}
+
+
+.intro{
+   
+   width: 200px;
+   height: 30px;
+/*   padding: 10px;*/
+   border-style: solid;
+   border-width: 3px;
+   border-color: #111111;
+   background-color: white;
+   color: white;
+   top: calc(50% - 40px);
+   left: calc(50% - 100px);
+   position: fixed;
+   height: 35px;width: 100%;background-color: black;left: 0;top: 0;
+
+}
+
+.credit{
+   
+   width: 100%;
+   height: 30px;
+   
+   border-style: solid;
+   border-width: 3px;
+   border-color: black;
+   background-color: #111111;
+   color: white;
+
+   left: 0;
+   position: fixed;
+
+   bottom: 0; opacity: 1;
+}
+
+.credit img{
+   right: 2%;
+   position: absolute;
+   top: 5px;
+}
+
+.title{
+   
+   width: 200px;
+   height: 30px;
+   color: white;
+   top: calc(50% - 37px);
+   left: calc(50% - 95px);
+   position: fixed;
+   text-align: center;
+   line-height: 30px;
+   letter-spacing: 1.8px;
+   font-weight: 600;
+ left: 15%;top: 6px;
+
+}
+
+.nav{
+   
+   width: auto;
+   height: 30px;
+   color: white;
+   top: 7px;
+   right: 15%;
+   position: fixed;
+   text-align: center;
+   line-height: 30px;
+   letter-spacing: 1.8px;
+   font-weight: 300;
+   font-size: 0.8em;
+   opacity: 1;
+   word-spacing:35px;
+
+}
+
+.loading{
+	animation:loading 4s;
+	height: 100%;
+	background-color: #111111;
+	animation-fill-mode: forwards;
+	left: 0;
+	margin:0;
+   width: 100%;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+body {
+	font: 18px/30px Sans-serif; 
+	font-family: "proxima-nova";
+   margin:0;
+   background-color: #f4f4f4;
+}
+
+a{
+   text-decoration: none;
+   color: white;
+   transition: 0.25s;
+}
+
+a:hover{
+   color: #cccccc;
+}
