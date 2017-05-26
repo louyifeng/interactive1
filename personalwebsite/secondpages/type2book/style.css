@@ -18,13 +18,27 @@
 .projecttitle{
    position: absolute;
    width: 100%;
-   height: 41px;
+   height: 42px;
    background-color: #f8f8f7;
    left: 0;
    top: 100vh;
    color: black;
    box-shadow: 0px 7px 21px -8px rgba(0,0,0,0.24);
    z-index: 99;
+   margin:0;
+}
+
+.projecttitle2{
+   position: absolute;
+   width: 100%;
+   height: 42px;
+   background-color: #f8f8f7;
+   left: 0;
+   top: calc(300vh + 800px);
+   color: black;
+   box-shadow: 0px 7px 21px -8px rgba(0,0,0,0.24);
+   z-index: 99;
+   margin:0;
 }
 
 .projecttitle p{
@@ -60,9 +74,8 @@
    width: 30%;
    font-weight: 300;
    left: 15.2%;
-   top: 23%;
+   top: 13%;
    font-size: 0.9em;
-
    line-height: 1.6em;
    margin: 0.5em;
 }
@@ -72,7 +85,7 @@
    width: 30%;
    font-weight: 300;
    left: 55.5%;
-   top: 30%;
+   top: 7%;
    font-size: 0.9em;
    line-height: 1.6em;
    margin: 0.5em;
@@ -87,6 +100,15 @@
    color: black;
 }
 
+.second img{
+    position: relative;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.15);
+   width: 29%;
+    height: auto;
+   left: 15.8%;
+  margin-top: 150px;
+}
+
 .third{
    width: 100%;
    height: 100vh;
@@ -98,11 +120,11 @@
 
 .third img{
     position: relative;
-  
-   width: 30%;
+  box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.15);
+   width: 29%;
     height: auto;
-   left: 55.5%;
-   margin-top:8%;
+   left: 56.1%;
+   margin-top:9%;
   
 }
 
@@ -128,21 +150,7 @@
 }
 
 
-.intro1{
-   
-   width: 200px;
-   height: 30px;
-/*   padding: 10px;*/
-   border-style: solid;
-   border-width: 3px;
-   border-color: #111111;
-   background-color: white;
-   color: white;
 
-   position: fixed;
-   height: 35px;width: 100%;background-color: black;left: 0;
-
-}
 
 .credit{
    
@@ -170,18 +178,23 @@
 
 .title{
    
+   width: 100%;
+   height: 40px;
+   color: white;
+   position: fixed;
+   left: 0;top:0;
+   background-color: black;
+}
+
+.title p{
+   position: relative;
    width: 200px;
    height: 30px;
-   color: white;
-   top: calc(50% - 37px);
-   left: calc(50% - 95px);
-   position: fixed;
-   text-align: center;
+   left: 15%;top: -12px;
+   font-weight: 600;
    line-height: 30px;
    letter-spacing: 1.8px;
-   font-weight: 600;
- left: 15%;top: 6px;
-
+   text-align: center;
 }
 
 .nav{
@@ -206,7 +219,9 @@
 
 
 
-
+.stage{
+   margin-top:0;
+}
 
 
 
