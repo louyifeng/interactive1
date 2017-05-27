@@ -1,0 +1,108 @@
+.stage{
+   margin:0;
+   width: 100%;
+   height: 100%;
+}
+
+
+.section{
+ 
+   width: 24.75%;
+   background-color: grey;
+   height: 250px;
+   float: left;
+   background-size: cover;
+   background-position: center center;
+}
+
+.first{
+   width: 100%;
+   height: 100vh;
+   background-image: url('ivan.jpg');
+}
+
+
+.credit{
+   
+   width: 100%;
+   height: 30px;
+   
+   border-style: solid;
+   border-width: 3px;
+   border-color: black;
+   background-color: #111111;
+   color: white;
+
+   left: 0;
+   position: fixed;
+  z-index: 100;
+   bottom: 0; opacity: 1;
+}
+
+.credit img{
+   right: 2%;
+   position: absolute;
+   top: 5px;
+
+}
+
+.title{
+   
+   width: 100%;
+   height: 40px;
+   color: white;
+   position: fixed;
+   left: 0;top:0;
+   background-color: black;
+}
+
+.title p{
+   position: relative;
+   width: 200px;
+   height: 30px;
+   left: 15%;top: -12px;
+   font-weight: 600;
+   line-height: 30px;
+   letter-spacing: 1.8px;
+   text-align: center;
+}
+
+.nav{
+   
+   width: auto;
+   height: 30px;
+   color: white;
+   top: 7px;
+   right: 15%;
+   position: fixed;
+   text-align: center;
+   line-height: 30px;
+   letter-spacing: 1.8px;
+   font-weight: 300;
+   font-size: 0.8em;
+   opacity: 1;
+   word-spacing:35px;
+
+}
+
+.stage{
+   margin-top:0;
+}
+
+
+body {
+	font: 18px/30px Sans-serif; 
+	font-family: "proxima-nova";
+   margin:0;
+   background-color: #f4f4f4;
+}
+
+a{
+   text-decoration: none;
+   color: white;
+   transition: 0.25s;
+}
+
+a:hover{
+   color: #cccccc;
+}
