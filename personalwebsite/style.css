@@ -161,23 +161,7 @@
    top: 5px;
 }
 
-.title{
-   
-   width: 200px;
-   height: 30px;
-   color: white;
-   top: calc(50% - 37px);
-   left: calc(50% - 95px);
-   position: fixed;
-   text-align: center;
-   line-height: 30px;
-   letter-spacing: 1.8px;
-   font-weight: 600;
-   animation:move1 2s;
-   animation-delay:4s; 
-   animation-fill-mode: forwards;
 
-}
 
 .nav{
    
@@ -190,7 +174,7 @@
    text-align: center;
    line-height: 30px;
    letter-spacing: 1.8px;
-   font-weight: 300;
+   font-weight: 100;
    font-size: 0.8em;
    opacity: 0;
    animation:move2 1s;
@@ -276,4 +260,21 @@ a{
 
 .title a:hover{
    color: #cccccc;
+}
+
+.title{
+   
+   width: 200px;
+   height: 30px;
+   color: white;
+   top: calc(50% - 37px);
+   left: calc(50% - 95px);
+   position: fixed;
+   text-align: center;
+   line-height: 30px;
+   letter-spacing: 1.8px;
+   font-weight: 600;
+   animation:move1 2s;
+   animation-delay:4s; 
+   animation-fill-mode: forwards;
 }

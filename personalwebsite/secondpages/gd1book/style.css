@@ -224,7 +224,7 @@
 }
 
 .title p{
-   position: relative;
+   position: absolute;
    width: 200px;
    height: 30px;
    left: 15%;top: -12px;
@@ -245,7 +245,7 @@
    text-align: center;
    line-height: 30px;
    letter-spacing: 1.8px;
-   font-weight: 300;
+   font-weight: 100;
    font-size: 0.8em;
 
    animation:move2 1s;
