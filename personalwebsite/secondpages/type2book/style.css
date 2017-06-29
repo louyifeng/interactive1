@@ -34,6 +34,10 @@
    .warningb{
    z-index: 1900;
 }
+   .warningb p{
+      font-size: 4em;
+   }
+
 }
 
 
